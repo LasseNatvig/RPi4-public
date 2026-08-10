@@ -1,4 +1,4 @@
-# TDT4258 - 2026 - RPi4setup README.md
+# TDT4258 - 2026 - RPi4 setup README.md
 
 A simple code example demonstrating possible vsCode setup for Raspberry Pi4.
 
