@@ -3,6 +3,8 @@
 
 Code example demonstrating how the small CPUlator VGA display can be simulated on Raspberry Pi4 (linux) and windows PCs. Uses #define and conditional compilation to control the single multi-version code.
 
+**NOTE** some of the code around line 27 in main.c has been removed, since it is a central part of Lab2 for the students, see the Lab2 text. When this part is written and code inserted in main it should work also for CPUlator.
+
 Since the SDL3 setup and Makefile are different on my different computers, the Makefile and .vscode are not uploaded to the repo. It is assumed that students can handle the setup by using setups from earlier examples.
 
 Installation of SDL3 can be a challenge, but I have experienced that cline often can help with doing it.
