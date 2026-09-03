@@ -1,9 +1,11 @@
 // VGAsim.h
+// Used in RPi4 - example 3 (VGAsim, SDL2/SDL3 multi-version code, introduced in Lecture 4 )
 
 #include <SDL3/SDL.h> 
 #include <stdio.h>
-#include <signal.h>
-#define SCREEN_WIDTH 320
+#include <signal.h> // for signal handling to allow Ctrl+C to exit the program
+
+#define SCREEN_WIDTH 320 // This screen size is available in CPUlator
 #define SCREEN_HEIGHT 240
 #define WINDOW_POS_X 1200 // Set position of window to where you want it on the screen 
 #define WINDOW_POS_Y 50 // Works for windows, not Raspberry Pi
