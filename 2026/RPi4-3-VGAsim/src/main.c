@@ -23,35 +23,9 @@
 
     asm("setPixel: \n\t" // assumes R0 = x-coord, R1 = y-coord, R2 = colorvalue
         "LDR R3, =#0xc8000000 \n\t" // VGAaddress
-        "LSL R1, R1, #10 \n\t"
-        "LSL R0, R0, #1 \n\t"
-        "ADD R1, R0 \n\t"
-        "STRH R2, [R3,R1] \n\t"
-        "BX LR");
-    asm("blankScreen: \n\t"
-        "    PUSH {LR} \n\t"
-        "    PUSH {R4, R5} \n\t"
-        "    LDR R2, =0x0000FFFF \n\t" 
-        "    MOV R4, #0 \n\t"
-        "x_loop:\n\t"
-        "    CMP R4, #320 \n\t"
-        "    BEQ end_x_loop \n\t"
-        "    MOV R5, #0 \n\t"
-        "y_loop:\n\t"
-        "    CMP R5, #240 \n\t"
-        "    BEQ end_y_loop \n\t"
-        "    MOV R0, R4 \n\t"
-        "    MOV R1, R5\n\t"
-        "    BL setPixel \n\t"
-        "    ADD R5, R5, #1 \n\t"
-        "    B y_loop \n\t"
-        "end_y_loop:\n\t"
-        "    ADD R4, R4, #1 \n\t"
-        "    B x_loop \n\t"
-        "end_x_loop:\n\t"
-        "    POP {R4,R5}\n\t"
-        "    POP {LR} \n\t"
-        "    BX LR");
+    //.....
+    // Code removed here since it is part of the lab ... 
+    //"    BX LR");
 #else
 	#include "VGAsim.h"
 
