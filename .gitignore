@@ -2,3 +2,11 @@
 2026/GenAI-3-win/.vscode/launch.json
 2026/GenAI-3-win/.vscode/c_cpp_properties.json
 2026/GenAI-3-win/Makefile
+2026/RPi4-3-VGAsim/release.exe
+2026/RPi4-3-VGAsim/debug.exe
+2026/RPi4-3-VGAsim/debug.ilk
+2026/RPi4-3-VGAsim/debug.pdb
+.gitignore
+2026/RPi4-3-VGAsim/Makefile
+2026/RPi4-3-VGAsim/SDL3.dll
+2026/RPi4-3-VGAsim/.vscode/tasks.json
