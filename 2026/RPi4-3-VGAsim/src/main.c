@@ -5,6 +5,7 @@
 #ifdef CPULATOR
 	void initVGA() {} // dummy function 
 	void updateVGA() {} // dummy function
+    void runVGA() {} // dummy function
     long long VGAcolor(int colorNo) {
         switch(colorNo) {
             case 0: return 0x0; // Black   
