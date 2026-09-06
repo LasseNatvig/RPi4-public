@@ -1,5 +1,5 @@
 // TDT4258 - 2026 - multiversion C code emulating the CPUlator 320 x 240 VGA screen
-// This file is used in the RPi4 example 3 (VGAsim, SDL2/SDL3 multi-version code, introduced in Lecture 4 )
+// This file is used in the RPi4 example 3 (VGAsim, SDL3 multi-version code, introduced in Lecture 4, or at end of Lecture 3 )
 // assuming SDL3 is installed. SDL3 is NOT part of the reading list for course TDT4258
 
 #include "VGAsim.h"
