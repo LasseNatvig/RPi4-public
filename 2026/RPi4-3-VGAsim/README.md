@@ -13,4 +13,4 @@ The code can be used for developing software using such a VGA screen on a PC or 
 
 Since the RPi4 is relatively slow, you can also use it to develop sotware on a PC before moving it to RPi4 if that is of interest.
 
-The "portability" of code for reading keystrokes etc. has not yest been investigated.
+The "portability" of code for reading keystrokes etc. has not yet been investigated.
