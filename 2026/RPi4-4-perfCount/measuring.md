@@ -1,6 +1,7 @@
 # Function Performance Measurement Guide
 
 ## Overview
+
 This document describes the methodology for measuring function performance using command-line arguments for **array size range (start, max, step)** and **number of experiments (E)**, along with hardware performance counter readings on ARM Cortex-A72 processors.
 
 ---
@@ -8,7 +9,9 @@ This document describes the methodology for measuring function performance using
 ## Methodology
 
 ### Command-Line Arguments
+
 The program accepts five command-line arguments:
+
 1. **expName**: Name of the experiment to run (prime, cache, or sorting)
 2. **E**: Number of experiments to run for averaging
 3. **start**: Starting value for the parameter being varied
@@ -18,6 +21,7 @@ The program accepts five command-line arguments:
 Note: For the **cache** experiment, the parameter varied is the stride (1, 2, 4, etc.). For the **sorting** experiment, the parameter varied is the array size. For the **prime** experiment, start/step/end are not used.
 
 ### Example Usage
+
 ```bash
 # Run prime experiment with 3 experiments
 ./program prime 3
@@ -48,7 +52,8 @@ Uses Linux `perf_event_open()` to access ARM Cortex-A72 PMU:
 | Cache Misses | `PERF_COUNT_HW_CACHE_MISSES` | Cache misses |
 | Branch Misses | `PERF_COUNT_HW_BRANCH_MISSES` | Branch instruction misses |
 
-### Derived Metrics
+### Derived Metric
+
 - **IPC**: Instructions / Cycles
 - **CacheMiss%**: (CacheMisses / CacheRefs) * 100%
 - **BranchMissPerInstr**: BranchMisses / Instructions (per-instruction rate)
@@ -56,6 +61,7 @@ Uses Linux `perf_event_open()` to access ARM Cortex-A72 PMU:
 - **RSD%**: Relative standard deviation across E experiments
 
 ### Output Value Units
+
 - Cycles, Instructions: displayed in millions (M)
 - Cache Refs: displayed in thousands (k)
 - Cache Misses, Branch Misses: raw values
@@ -66,8 +72,8 @@ Uses Linux `perf_event_open()` to access ARM Cortex-A72 PMU:
 
 ---
 
-
 ### Execution Loop
+
 For the **sorting** experiment, array size is varied from start to end in steps of step:
 ```c
 for (int size = start; size <= end; size += step) {
@@ -118,7 +124,7 @@ printCounterStats(outfile, counterVals, E);
 ```
 
 ### Output
-- Statistics printed to console with formatted columns
+  
 - All data saved to `res/res-<timestamp>.txt`
 - File contains: Experiment name, Experiment count (E), start/step/end parameters, and performance counter statistics for each experiment
 
