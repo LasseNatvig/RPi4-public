@@ -1,0 +1,22 @@
+PerfMini Performance Measurement
+Output file: res/res-20260919-165224.txt
+Experiment: prime
+Arguments E, start, step, end : 10,  0, 0, 0
+
+=== Timing Summary ===
+  Mean:   0.961071 seconds
+  StdDev: 0.016874 seconds
+  RelStd: 1.76%
+  Min:    0.949807 seconds
+  Max:    0.995976 seconds
+
+  Times: 0.995976, 0.992954, 0.958811, 0.952785, 0.951474, 0.951113, 0.951444, 0.954397, 0.951948, 0.949807
+
+=== Counter Statistics ===
+  Cycles: mean=1706596305 (0.10%)
+  Instructions: mean=2328967719 (0.00%)
+  Cache refs: mean=133500687 (0.00%)
+  Cache misses: mean=120 (155.72%)
+  Branch misses: mean=2864221
+
+Results saved to: res/res-20260919-165224.txt

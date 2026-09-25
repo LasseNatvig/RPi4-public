@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        "string.h": "c"
+    },
+    "makefile.configureOnOpen": false,
+    "editor.wordWrap": "on"
+}

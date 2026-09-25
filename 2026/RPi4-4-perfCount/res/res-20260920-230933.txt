@@ -1,0 +1,1606 @@
+Performance Measurements Demo
+Output file: res/res-20260920-230933.txt
+Experiment: sorting
+Arguments E, start, step, end : 20,  2000, 2000, 80000
+
+insertionSort: size= 2000
+=== Timing Summary ===
+  Mean:   0.002826 seconds
+  StdDev: 0.003014 seconds
+  RelStd: 106.65%
+  Min:    0.001779 seconds
+  Max:    0.015454 seconds
+
+  Times: 0.001828, 0.001842, 0.001793, 0.002260, 0.001790, 0.015454, 0.005620, 0.002133, 0.001828, 0.001882, 0.001840, 0.001996, 0.002591, 0.002557, 0.002100, 0.001825, 0.001784, 0.001832, 0.001781, 0.001779
+
+=== Counter Statistics ===
+  Cycles: mean=3.14M (0.56%)
+  Instructions: mean=9.26M (0.00%)
+  Cache refs: mean=2063.15k (0.01%)
+  Cache misses: mean=70 (101.26%)
+  Branch misses: mean=2043 (0.54%)
+  cacheMissRate: 0.0000
+  IPC: 2.9459
+  BranchMissesPerMillionInstructions: 220.70
+
+bubbleSort: size= 2000
+=== Timing Summary ===
+  Mean:   0.009841 seconds
+  StdDev: 0.001327 seconds
+  RelStd: 13.48%
+  Min:    0.008925 seconds
+  Max:    0.014211 seconds
+
+  Times: 0.014211, 0.010108, 0.009369, 0.010554, 0.011362, 0.011300, 0.010275, 0.009318, 0.008934, 0.008974, 0.008925, 0.009465, 0.008970, 0.011358, 0.008965, 0.008940, 0.008930, 0.008927, 0.008969, 0.008955
+
+=== Counter Statistics ===
+  Cycles: mean=15.99M (0.14%)
+  Instructions: mean=14.01M (0.00%)
+  Cache refs: mean=6049.66k (0.00%)
+  Cache misses: mean=129 (74.74%)
+  Branch misses: mean=2025 (0.64%)
+  cacheMissRate: 0.0000
+  IPC: 0.8759
+  BranchMissesPerMillionInstructions: 144.59
+
+insertionSort: size= 4000
+=== Timing Summary ===
+  Mean:   0.006889 seconds
+  StdDev: 0.000098 seconds
+  RelStd: 1.42%
+  Min:    0.006820 seconds
+  Max:    0.007173 seconds
+
+  Times: 0.006878, 0.006859, 0.006886, 0.006881, 0.006898, 0.006871, 0.006913, 0.006871, 0.006862, 0.006851, 0.006835, 0.006868, 0.006832, 0.006825, 0.006820, 0.006824, 0.006828, 0.006831, 0.007170, 0.007173
+
+=== Counter Statistics ===
+  Cycles: mean=12.21M (0.04%)
+  Instructions: mean=36.36M (0.00%)
+  Cache refs: mean=8090.90k (0.00%)
+  Cache misses: mean=114 (36.72%)
+  Branch misses: mean=4040 (0.25%)
+  cacheMissRate: 0.0000
+  IPC: 2.9776
+  BranchMissesPerMillionInstructions: 111.13
+
+bubbleSort: size= 4000
+=== Timing Summary ===
+  Mean:   0.035789 seconds
+  StdDev: 0.000187 seconds
+  RelStd: 0.52%
+  Min:    0.035616 seconds
+  Max:    0.036343 seconds
+
+  Times: 0.036196, 0.035869, 0.035769, 0.035737, 0.036343, 0.035890, 0.035728, 0.035740, 0.035740, 0.035833, 0.035664, 0.035670, 0.035719, 0.035620, 0.035629, 0.035621, 0.035616, 0.035732, 0.035680, 0.035978
+
+=== Counter Statistics ===
+  Cycles: mean=63.97M (0.01%)
+  Instructions: mean=56.01M (0.00%)
+  Cache refs: mean=24063.91k (0.00%)
+  Cache misses: mean=234 (12.65%)
+  Branch misses: mean=4009 (0.28%)
+  cacheMissRate: 0.0000
+  IPC: 0.8756
+  BranchMissesPerMillionInstructions: 71.57
+
+insertionSort: size= 6000
+=== Timing Summary ===
+  Mean:   0.015350 seconds
+  StdDev: 0.000082 seconds
+  RelStd: 0.53%
+  Min:    0.015263 seconds
+  Max:    0.015633 seconds
+
+  Times: 0.015374, 0.015633, 0.015430, 0.015399, 0.015319, 0.015416, 0.015343, 0.015337, 0.015304, 0.015397, 0.015322, 0.015309, 0.015313, 0.015362, 0.015282, 0.015378, 0.015263, 0.015265, 0.015279, 0.015278
+
+=== Counter Statistics ===
+  Cycles: mean=27.27M (0.06%)
+  Instructions: mean=81.24M (0.00%)
+  Cache refs: mean=18070.70k (0.00%)
+  Cache misses: mean=7060 (0.53%)
+  Branch misses: mean=6039 (0.12%)
+  cacheMissRate: 0.0004
+  IPC: 2.9785
+  BranchMissesPerMillionInstructions: 74.34
+
+bubbleSort: size= 6000
+=== Timing Summary ===
+  Mean:   0.080307 seconds
+  StdDev: 0.000174 seconds
+  RelStd: 0.22%
+  Min:    0.080097 seconds
+  Max:    0.080786 seconds
+
+  Times: 0.080426, 0.080419, 0.080435, 0.080388, 0.080315, 0.080509, 0.080133, 0.080097, 0.080159, 0.080134, 0.080175, 0.080113, 0.080106, 0.080232, 0.080492, 0.080431, 0.080786, 0.080288, 0.080285, 0.080214
+
+=== Counter Statistics ===
+  Cycles: mean=143.88M (0.00%)
+  Instructions: mean=126.02M (0.00%)
+  Cache refs: mean=54030.12k (0.00%)
+  Cache misses: mean=11849 (3.32%)
+  Branch misses: mean=6010 (0.14%)
+  cacheMissRate: 0.0002
+  IPC: 0.8759
+  BranchMissesPerMillionInstructions: 47.69
+
+insertionSort: size= 8000
+=== Timing Summary ===
+  Mean:   0.026977 seconds
+  StdDev: 0.000157 seconds
+  RelStd: 0.58%
+  Min:    0.026831 seconds
+  Max:    0.027486 seconds
+
+  Times: 0.026998, 0.027068, 0.027094, 0.027155, 0.027486, 0.027025, 0.026888, 0.027121, 0.026867, 0.027097, 0.026882, 0.026831, 0.026837, 0.026862, 0.026901, 0.026861, 0.026900, 0.026962, 0.026860, 0.026842
+
+=== Counter Statistics ===
+  Cycles: mean=48.22M (0.09%)
+  Instructions: mean=142.96M (0.00%)
+  Cache refs: mean=31792.10k (0.00%)
+  Cache misses: mean=66484 (0.93%)
+  Branch misses: mean=8067 (0.05%)
+  cacheMissRate: 0.0021
+  IPC: 2.9646
+  BranchMissesPerMillionInstructions: 56.43
+
+bubbleSort: size= 8000
+=== Timing Summary ===
+  Mean:   0.142562 seconds
+  StdDev: 0.000107 seconds
+  RelStd: 0.07%
+  Min:    0.142421 seconds
+  Max:    0.142861 seconds
+
+  Times: 0.142861, 0.142603, 0.142495, 0.142552, 0.142459, 0.142549, 0.142536, 0.142499, 0.142622, 0.142804, 0.142603, 0.142460, 0.142558, 0.142443, 0.142487, 0.142606, 0.142563, 0.142556, 0.142421, 0.142554
+
+=== Counter Statistics ===
+  Cycles: mean=256.01M (0.00%)
+  Instructions: mean=224.03M (0.00%)
+  Cache refs: mean=95737.27k (0.00%)
+  Cache misses: mean=97753 (0.40%)
+  Branch misses: mean=8015 (0.09%)
+  cacheMissRate: 0.0010
+  IPC: 0.8751
+  BranchMissesPerMillionInstructions: 35.78
+
+insertionSort: size= 10000
+=== Timing Summary ===
+  Mean:   0.042213 seconds
+  StdDev: 0.000436 seconds
+  RelStd: 1.03%
+  Min:    0.042040 seconds
+  Max:    0.044038 seconds
+
+  Times: 0.042607, 0.042188, 0.042077, 0.042217, 0.042075, 0.042065, 0.042045, 0.042115, 0.042153, 0.042040, 0.042047, 0.042113, 0.042043, 0.044038, 0.042103, 0.042078, 0.042125, 0.042040, 0.042043, 0.042046
+
+=== Counter Statistics ===
+  Cycles: mean=75.55M (0.06%)
+  Instructions: mean=224.08M (0.00%)
+  Cache refs: mean=49826.33k (0.00%)
+  Cache misses: mean=112019 (0.67%)
+  Branch misses: mean=10081 (0.08%)
+  cacheMissRate: 0.0022
+  IPC: 2.9660
+  BranchMissesPerMillionInstructions: 44.99
+
+bubbleSort: size= 10000
+=== Timing Summary ===
+  Mean:   0.222988 seconds
+  StdDev: 0.000477 seconds
+  RelStd: 0.21%
+  Min:    0.222617 seconds
+  Max:    0.224417 seconds
+
+  Times: 0.223383, 0.222664, 0.223990, 0.223448, 0.224417, 0.223262, 0.222916, 0.222662, 0.222642, 0.222996, 0.222705, 0.222983, 0.222792, 0.222617, 0.222734, 0.222658, 0.222825, 0.222653, 0.222774, 0.222642
+
+=== Counter Statistics ===
+  Cycles: mean=400.10M (0.02%)
+  Instructions: mean=350.04M (0.00%)
+  Cache refs: mean=149757.42k (0.00%)
+  Cache misses: mean=186065 (0.19%)
+  Branch misses: mean=10017 (0.06%)
+  cacheMissRate: 0.0012
+  IPC: 0.8749
+  BranchMissesPerMillionInstructions: 28.62
+
+insertionSort: size= 12000
+=== Timing Summary ===
+  Mean:   0.060992 seconds
+  StdDev: 0.000126 seconds
+  RelStd: 0.21%
+  Min:    0.060885 seconds
+  Max:    0.061368 seconds
+
+  Times: 0.061297, 0.061095, 0.061037, 0.060929, 0.061031, 0.060969, 0.060905, 0.060887, 0.060998, 0.060942, 0.061000, 0.060968, 0.060924, 0.060947, 0.060891, 0.060885, 0.060959, 0.060912, 0.060902, 0.061368
+
+=== Counter Statistics ===
+  Cycles: mean=109.46M (0.07%)
+  Instructions: mean=324.27M (0.00%)
+  Cache refs: mean=72096.35k (0.00%)
+  Cache misses: mean=193528 (0.32%)
+  Branch misses: mean=12102 (0.05%)
+  cacheMissRate: 0.0027
+  IPC: 2.9625
+  BranchMissesPerMillionInstructions: 37.32
+
+bubbleSort: size= 12000
+=== Timing Summary ===
+  Mean:   0.320869 seconds
+  StdDev: 0.000491 seconds
+  RelStd: 0.15%
+  Min:    0.320527 seconds
+  Max:    0.322857 seconds
+
+  Times: 0.322857, 0.321319, 0.320773, 0.320879, 0.320796, 0.320701, 0.321021, 0.320592, 0.320614, 0.320899, 0.320527, 0.320718, 0.321003, 0.320617, 0.320642, 0.320734, 0.320614, 0.320704, 0.320732, 0.320635
+
+=== Counter Statistics ===
+  Cycles: mean=576.13M (0.00%)
+  Instructions: mean=504.04M (0.00%)
+  Cache refs: mean=216013.27k (0.00%)
+  Cache misses: mean=347162 (0.11%)
+  Branch misses: mean=12022 (0.05%)
+  cacheMissRate: 0.0016
+  IPC: 0.8749
+  BranchMissesPerMillionInstructions: 23.85
+
+insertionSort: size= 14000
+=== Timing Summary ===
+  Mean:   0.082884 seconds
+  StdDev: 0.000275 seconds
+  RelStd: 0.33%
+  Min:    0.082602 seconds
+  Max:    0.083425 seconds
+
+  Times: 0.083125, 0.082665, 0.082959, 0.082628, 0.082609, 0.082612, 0.082648, 0.082614, 0.082831, 0.082739, 0.082602, 0.082694, 0.083301, 0.083291, 0.083425, 0.083266, 0.082923, 0.082934, 0.082643, 0.083170
+
+=== Counter Statistics ===
+  Cycles: mean=148.61M (0.12%)
+  Instructions: mean=439.63M (0.00%)
+  Cache refs: mean=97740.54k (0.00%)
+  Cache misses: mean=291508 (0.20%)
+  Branch misses: mean=14116 (0.06%)
+  cacheMissRate: 0.0030
+  IPC: 2.9583
+  BranchMissesPerMillionInstructions: 32.11
+
+bubbleSort: size= 14000
+=== Timing Summary ===
+  Mean:   0.436981 seconds
+  StdDev: 0.001054 seconds
+  RelStd: 0.24%
+  Min:    0.436431 seconds
+  Max:    0.440835 seconds
+
+  Times: 0.437374, 0.436469, 0.436617, 0.436465, 0.436560, 0.436983, 0.436481, 0.436493, 0.436440, 0.440835, 0.437983, 0.438687, 0.436654, 0.436531, 0.436690, 0.436436, 0.436532, 0.436486, 0.436482, 0.436431
+
+=== Counter Statistics ===
+  Cycles: mean=784.27M (0.01%)
+  Instructions: mean=686.05M (0.00%)
+  Cache refs: mean=293643.45k (0.00%)
+  Cache misses: mean=506050 (0.07%)
+  Branch misses: mean=14025 (0.04%)
+  cacheMissRate: 0.0017
+  IPC: 0.8748
+  BranchMissesPerMillionInstructions: 20.44
+
+insertionSort: size= 16000
+=== Timing Summary ===
+  Mean:   0.107909 seconds
+  StdDev: 0.000351 seconds
+  RelStd: 0.33%
+  Min:    0.107559 seconds
+  Max:    0.108900 seconds
+
+  Times: 0.108231, 0.107720, 0.107715, 0.107602, 0.107733, 0.107733, 0.107676, 0.107604, 0.107573, 0.108280, 0.108407, 0.108900, 0.107891, 0.107970, 0.107823, 0.108437, 0.107848, 0.107616, 0.107559, 0.107870
+
+=== Counter Statistics ===
+  Cycles: mean=193.50M (0.11%)
+  Instructions: mean=572.70M (0.00%)
+  Cache refs: mean=127316.37k (0.00%)
+  Cache misses: mean=375628 (0.13%)
+  Branch misses: mean=16134 (0.07%)
+  cacheMissRate: 0.0030
+  IPC: 2.9596
+  BranchMissesPerMillionInstructions: 28.17
+
+bubbleSort: size= 16000
+=== Timing Summary ===
+  Mean:   0.570291 seconds
+  StdDev: 0.000427 seconds
+  RelStd: 0.07%
+  Min:    0.569942 seconds
+  Max:    0.571704 seconds
+
+  Times: 0.570665, 0.570147, 0.570158, 0.569989, 0.570277, 0.570096, 0.570399, 0.571704, 0.571233, 0.570170, 0.569942, 0.570226, 0.570051, 0.570115, 0.570133, 0.570202, 0.570141, 0.570042, 0.570081, 0.570049
+
+=== Counter Statistics ===
+  Cycles: mean=1024.33M (0.00%)
+  Instructions: mean=896.06M (0.00%)
+  Cache refs: mean=383205.28k (0.00%)
+  Cache misses: mean=630582 (0.05%)
+  Branch misses: mean=16026 (0.03%)
+  cacheMissRate: 0.0016
+  IPC: 0.8748
+  BranchMissesPerMillionInstructions: 17.88
+
+insertionSort: size= 18000
+=== Timing Summary ===
+  Mean:   0.136436 seconds
+  StdDev: 0.000454 seconds
+  RelStd: 0.33%
+  Min:    0.135996 seconds
+  Max:    0.137602 seconds
+
+  Times: 0.136519, 0.136413, 0.136062, 0.136024, 0.136032, 0.136244, 0.135996, 0.136831, 0.137602, 0.137481, 0.136485, 0.136956, 0.136679, 0.136147, 0.136265, 0.136423, 0.136188, 0.136109, 0.136191, 0.136066
+
+=== Counter Statistics ===
+  Cycles: mean=244.65M (0.10%)
+  Instructions: mean=724.34M (0.00%)
+  Cache refs: mean=161021.92k (0.00%)
+  Cache misses: mean=473500 (0.16%)
+  Branch misses: mean=18154 (0.06%)
+  cacheMissRate: 0.0029
+  IPC: 2.9608
+  BranchMissesPerMillionInstructions: 25.06
+
+bubbleSort: size= 18000
+=== Timing Summary ===
+  Mean:   0.721909 seconds
+  StdDev: 0.000579 seconds
+  RelStd: 0.08%
+  Min:    0.721503 seconds
+  Max:    0.723887 seconds
+
+  Times: 0.722430, 0.721749, 0.721644, 0.721722, 0.722357, 0.723887, 0.722045, 0.721665, 0.721576, 0.721576, 0.721739, 0.721530, 0.721703, 0.722950, 0.721643, 0.721664, 0.721544, 0.721656, 0.721503, 0.721605
+
+=== Counter Statistics ===
+  Cycles: mean=1296.71M (0.00%)
+  Instructions: mean=1134.06M (0.00%)
+  Cache refs: mean=484896.86k (0.00%)
+  Cache misses: mean=767072 (0.04%)
+  Branch misses: mean=18023 (0.04%)
+  cacheMissRate: 0.0016
+  IPC: 0.8746
+  BranchMissesPerMillionInstructions: 15.89
+
+insertionSort: size= 20000
+=== Timing Summary ===
+  Mean:   0.168065 seconds
+  StdDev: 0.000373 seconds
+  RelStd: 0.22%
+  Min:    0.167651 seconds
+  Max:    0.168944 seconds
+
+  Times: 0.168278, 0.167907, 0.168012, 0.167935, 0.167726, 0.168080, 0.168944, 0.168681, 0.168373, 0.168879, 0.167929, 0.168116, 0.168024, 0.167676, 0.167843, 0.167786, 0.167835, 0.167868, 0.167651, 0.167751
+
+=== Counter Statistics ===
+  Cycles: mean=301.61M (0.09%)
+  Instructions: mean=893.41M (0.00%)
+  Cache refs: mean=198600.06k (0.00%)
+  Cache misses: mean=575486 (0.11%)
+  Branch misses: mean=20168 (0.04%)
+  cacheMissRate: 0.0029
+  IPC: 2.9622
+  BranchMissesPerMillionInstructions: 22.57
+
+bubbleSort: size= 20000
+=== Timing Summary ===
+  Mean:   0.891367 seconds
+  StdDev: 0.000935 seconds
+  RelStd: 0.10%
+  Min:    0.890717 seconds
+  Max:    0.894887 seconds
+
+  Times: 0.891366, 0.890939, 0.891649, 0.892842, 0.891349, 0.891167, 0.890905, 0.890717, 0.891153, 0.890941, 0.890830, 0.890952, 0.890904, 0.890743, 0.891150, 0.894887, 0.891832, 0.891119, 0.890963, 0.890927
+
+=== Counter Statistics ===
+  Cycles: mean=1600.88M (0.00%)
+  Instructions: mean=1400.07M (0.00%)
+  Cache refs: mean=598461.07k (0.00%)
+  Cache misses: mean=915241 (0.04%)
+  Branch misses: mean=20025 (0.09%)
+  cacheMissRate: 0.0015
+  IPC: 0.8746
+  BranchMissesPerMillionInstructions: 14.30
+
+insertionSort: size= 22000
+=== Timing Summary ===
+  Mean:   0.203595 seconds
+  StdDev: 0.000458 seconds
+  RelStd: 0.22%
+  Min:    0.203129 seconds
+  Max:    0.204854 seconds
+
+  Times: 0.204089, 0.203354, 0.203321, 0.203493, 0.203404, 0.204854, 0.204504, 0.204103, 0.204018, 0.203488, 0.203553, 0.203291, 0.203280, 0.203360, 0.203129, 0.203304, 0.203389, 0.203247, 0.203562, 0.203152
+
+=== Counter Statistics ===
+  Cycles: mean=365.43M (0.09%)
+  Instructions: mean=1082.69M (0.00%)
+  Cache refs: mean=240668.99k (0.00%)
+  Cache misses: mean=696014 (0.07%)
+  Branch misses: mean=22173 (0.05%)
+  cacheMissRate: 0.0029
+  IPC: 2.9628
+  BranchMissesPerMillionInstructions: 20.48
+
+bubbleSort: size= 22000
+=== Timing Summary ===
+  Mean:   1.078281 seconds
+  StdDev: 0.000947 seconds
+  RelStd: 0.09%
+  Min:    1.077826 seconds
+  Max:    1.082284 seconds
+
+  Times: 1.078863, 1.078437, 1.082284, 1.078129, 1.078003, 1.077924, 1.078229, 1.077987, 1.077994, 1.077927, 1.077946, 1.078114, 1.077985, 1.077859, 1.078224, 1.077881, 1.077999, 1.077826, 1.077960, 1.078046
+
+=== Counter Statistics ===
+  Cycles: mean=1937.12M (0.01%)
+  Instructions: mean=1694.08M (0.00%)
+  Cache refs: mean=724516.06k (0.00%)
+  Cache misses: mean=1075247 (0.03%)
+  Branch misses: mean=22023 (0.03%)
+  cacheMissRate: 0.0015
+  IPC: 0.8745
+  BranchMissesPerMillionInstructions: 13.00
+
+insertionSort: size= 24000
+=== Timing Summary ===
+  Mean:   0.242397 seconds
+  StdDev: 0.000586 seconds
+  RelStd: 0.24%
+  Min:    0.241886 seconds
+  Max:    0.243984 seconds
+
+  Times: 0.242819, 0.243395, 0.242135, 0.241943, 0.243984, 0.243266, 0.243092, 0.242503, 0.242571, 0.241912, 0.242054, 0.242000, 0.242021, 0.242096, 0.242141, 0.241979, 0.242050, 0.241886, 0.242016, 0.242068
+
+=== Counter Statistics ===
+  Cycles: mean=435.02M (0.10%)
+  Instructions: mean=1289.18M (0.00%)
+  Cache refs: mean=286560.87k (0.00%)
+  Cache misses: mean=821833 (0.07%)
+  Branch misses: mean=24187 (0.07%)
+  cacheMissRate: 0.0029
+  IPC: 2.9635
+  BranchMissesPerMillionInstructions: 18.76
+
+bubbleSort: size= 24000
+=== Timing Summary ===
+  Mean:   1.283218 seconds
+  StdDev: 0.000699 seconds
+  RelStd: 0.05%
+  Min:    1.282748 seconds
+  Max:    1.285683 seconds
+
+  Times: 1.284736, 1.285683, 1.283150, 1.283108, 1.282900, 1.283196, 1.283188, 1.283121, 1.282771, 1.282908, 1.282961, 1.282983, 1.282826, 1.283207, 1.282865, 1.282833, 1.282748, 1.282838, 1.283019, 1.283316
+
+=== Counter Statistics ===
+  Cycles: mean=2305.44M (0.01%)
+  Instructions: mean=2016.08M (0.00%)
+  Cache refs: mean=862394.21k (0.00%)
+  Cache misses: mean=1246930 (0.02%)
+  Branch misses: mean=24026 (0.02%)
+  cacheMissRate: 0.0014
+  IPC: 0.8745
+  BranchMissesPerMillionInstructions: 11.92
+
+insertionSort: size= 26000
+=== Timing Summary ===
+  Mean:   0.285332 seconds
+  StdDev: 0.000991 seconds
+  RelStd: 0.35%
+  Min:    0.284696 seconds
+  Max:    0.288130 seconds
+
+  Times: 0.285304, 0.284737, 0.284862, 0.286290, 0.286623, 0.287661, 0.288130, 0.285020, 0.284814, 0.284812, 0.284734, 0.284851, 0.284779, 0.284853, 0.284768, 0.284823, 0.284696, 0.285213, 0.284840, 0.284835
+
+=== Counter Statistics ===
+  Cycles: mean=512.19M (0.22%)
+  Instructions: mean=1517.43M (0.00%)
+  Cache refs: mean=337290.13k (0.00%)
+  Cache misses: mean=953949 (0.06%)
+  Branch misses: mean=26193 (0.05%)
+  cacheMissRate: 0.0028
+  IPC: 2.9626
+  BranchMissesPerMillionInstructions: 17.26
+
+bubbleSort: size= 26000
+=== Timing Summary ===
+  Mean:   1.506123 seconds
+  StdDev: 0.001300 seconds
+  RelStd: 0.09%
+  Min:    1.505449 seconds
+  Max:    1.510900 seconds
+
+  Times: 1.508765, 1.510900, 1.505888, 1.506469, 1.505787, 1.505637, 1.505616, 1.505956, 1.505613, 1.505720, 1.505479, 1.505623, 1.505663, 1.505537, 1.505525, 1.505897, 1.505449, 1.505711, 1.505570, 1.505661
+
+=== Counter Statistics ===
+  Cycles: mean=2706.08M (0.06%)
+  Instructions: mean=2366.09M (0.00%)
+  Cache refs: mean=1013109.59k (0.00%)
+  Cache misses: mean=1431100 (0.02%)
+  Branch misses: mean=26026 (0.03%)
+  cacheMissRate: 0.0014
+  IPC: 0.8744
+  BranchMissesPerMillionInstructions: 11.00
+
+insertionSort: size= 28000
+=== Timing Summary ===
+  Mean:   0.331753 seconds
+  StdDev: 0.000643 seconds
+  RelStd: 0.19%
+  Min:    0.331296 seconds
+  Max:    0.334189 seconds
+
+  Times: 0.332059, 0.331395, 0.331495, 0.334189, 0.332599, 0.332060, 0.331646, 0.331296, 0.331521, 0.331655, 0.331362, 0.331562, 0.331420, 0.331313, 0.331409, 0.331825, 0.331392, 0.331504, 0.331942, 0.331411
+
+=== Counter Statistics ===
+  Cycles: mean=595.69M (0.09%)
+  Instructions: mean=1766.52M (0.00%)
+  Cache refs: mean=392649.45k (0.00%)
+  Cache misses: mean=1085522 (0.05%)
+  Branch misses: mean=28200 (0.05%)
+  cacheMissRate: 0.0028
+  IPC: 2.9655
+  BranchMissesPerMillionInstructions: 15.96
+
+bubbleSort: size= 28000
+=== Timing Summary ===
+  Mean:   1.746452 seconds
+  StdDev: 0.000724 seconds
+  RelStd: 0.04%
+  Min:    1.745993 seconds
+  Max:    1.749441 seconds
+
+  Times: 1.749441, 1.747003, 1.746572, 1.746519, 1.746341, 1.746590, 1.746229, 1.746133, 1.746236, 1.746037, 1.746239, 1.746111, 1.746190, 1.746243, 1.746339, 1.746363, 1.746000, 1.746240, 1.746214, 1.745993
+
+=== Counter Statistics ===
+  Cycles: mean=3138.08M (0.01%)
+  Instructions: mean=2744.10M (0.00%)
+  Cache refs: mean=1176454.94k (0.00%)
+  Cache misses: mean=1626636 (0.03%)
+  Branch misses: mean=28021 (0.02%)
+  cacheMissRate: 0.0014
+  IPC: 0.8745
+  BranchMissesPerMillionInstructions: 10.21
+
+insertionSort: size= 30000
+=== Timing Summary ===
+  Mean:   0.380618 seconds
+  StdDev: 0.000589 seconds
+  RelStd: 0.15%
+  Min:    0.380121 seconds
+  Max:    0.382147 seconds
+
+  Times: 0.381072, 0.380298, 0.381978, 0.382147, 0.381563, 0.380509, 0.380216, 0.380289, 0.380408, 0.380251, 0.380298, 0.380121, 0.380285, 0.380442, 0.380234, 0.380930, 0.380323, 0.380395, 0.380384, 0.380221
+
+=== Counter Statistics ===
+  Cycles: mean=683.50M (0.07%)
+  Instructions: mean=2027.46M (0.00%)
+  Cache refs: mean=450644.15k (0.00%)
+  Cache misses: mean=1225057 (0.04%)
+  Branch misses: mean=30209 (0.03%)
+  cacheMissRate: 0.0027
+  IPC: 2.9663
+  BranchMissesPerMillionInstructions: 14.90
+
+bubbleSort: size= 30000
+=== Timing Summary ===
+  Mean:   2.004657 seconds
+  StdDev: 0.000858 seconds
+  RelStd: 0.04%
+  Min:    2.004153 seconds
+  Max:    2.008214 seconds
+
+  Times: 2.008214, 2.004987, 2.004618, 2.004363, 2.004625, 2.004363, 2.005303, 2.004329, 2.004213, 2.004257, 2.004258, 2.004153, 2.004409, 2.004364, 2.004274, 2.004474, 2.004635, 2.004527, 2.004363, 2.004410
+
+=== Counter Statistics ===
+  Cycles: mean=3602.00M (0.01%)
+  Instructions: mean=3150.11M (0.00%)
+  Cache refs: mean=1350435.99k (0.00%)
+  Cache misses: mean=1835270 (0.22%)
+  Branch misses: mean=30024 (0.02%)
+  cacheMissRate: 0.0014
+  IPC: 0.8745
+  BranchMissesPerMillionInstructions: 9.53
+
+insertionSort: size= 32000
+=== Timing Summary ===
+  Mean:   0.433974 seconds
+  StdDev: 0.000826 seconds
+  RelStd: 0.19%
+  Min:    0.433426 seconds
+  Max:    0.436892 seconds
+
+  Times: 0.434652, 0.433442, 0.436892, 0.435250, 0.434330, 0.433518, 0.433675, 0.433808, 0.433426, 0.433554, 0.433638, 0.433605, 0.433488, 0.434605, 0.433821, 0.433464, 0.433684, 0.433608, 0.433478, 0.433533
+
+=== Counter Statistics ===
+  Cycles: mean=779.27M (0.11%)
+  Instructions: mean=2311.91M (0.00%)
+  Cache refs: mean=513861.98k (0.00%)
+  Cache misses: mean=1376214 (0.04%)
+  Branch misses: mean=32229 (0.05%)
+  cacheMissRate: 0.0027
+  IPC: 2.9668
+  BranchMissesPerMillionInstructions: 13.94
+
+bubbleSort: size= 32000
+=== Timing Summary ===
+  Mean:   2.281194 seconds
+  StdDev: 0.000867 seconds
+  RelStd: 0.04%
+  Min:    2.280681 seconds
+  Max:    2.284701 seconds
+
+  Times: 2.284701, 2.281721, 2.281492, 2.281709, 2.280860, 2.281444, 2.280953, 2.280748, 2.280848, 2.280835, 2.280854, 2.280802, 2.280874, 2.280789, 2.280700, 2.280789, 2.281306, 2.280916, 2.280681, 2.280857
+
+=== Counter Statistics ===
+  Cycles: mean=4098.78M (0.01%)
+  Instructions: mean=3584.11M (0.00%)
+  Cache refs: mean=1537640.19k (0.00%)
+  Cache misses: mean=2053247 (0.02%)
+  Branch misses: mean=32024 (0.02%)
+  cacheMissRate: 0.0013
+  IPC: 0.8744
+  BranchMissesPerMillionInstructions: 8.93
+
+insertionSort: size= 34000
+=== Timing Summary ===
+  Mean:   0.491177 seconds
+  StdDev: 0.001041 seconds
+  RelStd: 0.21%
+  Min:    0.490589 seconds
+  Max:    0.495433 seconds
+
+  Times: 0.491451, 0.490724, 0.495433, 0.492092, 0.491162, 0.490666, 0.490813, 0.490711, 0.490770, 0.490751, 0.490770, 0.490710, 0.491395, 0.490653, 0.490942, 0.491336, 0.490589, 0.490947, 0.490674, 0.490954
+
+=== Counter Statistics ===
+  Cycles: mean=882.04M (0.09%)
+  Instructions: mean=2618.48M (0.00%)
+  Cache refs: mean=581992.62k (0.00%)
+  Cache misses: mean=1490787 (0.04%)
+  Branch misses: mean=34207 (0.05%)
+  cacheMissRate: 0.0026
+  IPC: 2.9687
+  BranchMissesPerMillionInstructions: 13.06
+
+bubbleSort: size= 34000
+=== Timing Summary ===
+  Mean:   2.575391 seconds
+  StdDev: 0.001501 seconds
+  RelStd: 0.06%
+  Min:    2.574581 seconds
+  Max:    2.580026 seconds
+
+  Times: 2.579670, 2.575009, 2.574841, 2.575253, 2.574816, 2.574960, 2.574845, 2.574696, 2.574689, 2.575166, 2.574822, 2.574764, 2.574615, 2.574792, 2.574581, 2.575157, 2.575249, 2.574653, 2.575207, 2.580026
+
+=== Counter Statistics ===
+  Cycles: mean=4627.10M (0.01%)
+  Instructions: mean=4046.12M (0.00%)
+  Cache refs: mean=1737757.93k (0.00%)
+  Cache misses: mean=2267746 (0.02%)
+  Branch misses: mean=34028 (0.04%)
+  cacheMissRate: 0.0013
+  IPC: 0.8744
+  BranchMissesPerMillionInstructions: 8.41
+
+insertionSort: size= 36000
+=== Timing Summary ===
+  Mean:   0.549025 seconds
+  StdDev: 0.000873 seconds
+  RelStd: 0.16%
+  Min:    0.548391 seconds
+  Max:    0.552499 seconds
+
+  Times: 0.549477, 0.549673, 0.552499, 0.549376, 0.548606, 0.548594, 0.548687, 0.548749, 0.548543, 0.549348, 0.549154, 0.548884, 0.548794, 0.548845, 0.548546, 0.548666, 0.548391, 0.548552, 0.548534, 0.548582
+
+=== Counter Statistics ===
+  Cycles: mean=986.05M (0.08%)
+  Instructions: mean=2928.03M (0.00%)
+  Cache refs: mean=650789.87k (0.00%)
+  Cache misses: mean=1628709 (0.02%)
+  Branch misses: mean=36202 (0.04%)
+  cacheMissRate: 0.0025
+  IPC: 2.9695
+  BranchMissesPerMillionInstructions: 12.36
+
+bubbleSort: size= 36000
+=== Timing Summary ===
+  Mean:   2.887152 seconds
+  StdDev: 0.001315 seconds
+  RelStd: 0.05%
+  Min:    2.886482 seconds
+  Max:    2.892499 seconds
+
+  Times: 2.892499, 2.886687, 2.887351, 2.886803, 2.886680, 2.886561, 2.888352, 2.887094, 2.886739, 2.886711, 2.886831, 2.886629, 2.886611, 2.886858, 2.886482, 2.886580, 2.886578, 2.886555, 2.886505, 2.887929
+
+=== Counter Statistics ===
+  Cycles: mean=5187.78M (0.02%)
+  Instructions: mean=4536.13M (0.00%)
+  Cache refs: mean=1946540.81k (0.00%)
+  Cache misses: mean=2680352 (0.27%)
+  Branch misses: mean=36030 (0.03%)
+  cacheMissRate: 0.0014
+  IPC: 0.8744
+  BranchMissesPerMillionInstructions: 7.94
+
+insertionSort: size= 38000
+=== Timing Summary ===
+  Mean:   0.612563 seconds
+  StdDev: 0.002445 seconds
+  RelStd: 0.40%
+  Min:    0.611541 seconds
+  Max:    0.622785 seconds
+
+  Times: 0.612610, 0.614764, 0.622785, 0.612186, 0.611689, 0.611780, 0.611919, 0.611659, 0.611981, 0.612593, 0.611831, 0.611977, 0.611580, 0.611640, 0.611541, 0.611707, 0.611845, 0.611723, 0.611749, 0.611701
+
+=== Counter Statistics ===
+  Cycles: mean=1100.19M (0.31%)
+  Instructions: mean=3265.77M (0.00%)
+  Cache refs: mean=725849.25k (0.00%)
+  Cache misses: mean=1785310 (0.03%)
+  Branch misses: mean=38211 (0.08%)
+  cacheMissRate: 0.0025
+  IPC: 2.9684
+  BranchMissesPerMillionInstructions: 11.70
+
+bubbleSort: size= 38000
+=== Timing Summary ===
+  Mean:   3.216835 seconds
+  StdDev: 0.002033 seconds
+  RelStd: 0.06%
+  Min:    3.216079 seconds
+  Max:    3.225634 seconds
+
+  Times: 3.225634, 3.217152, 3.216703, 3.216474, 3.216393, 3.216309, 3.216227, 3.216145, 3.216370, 3.216494, 3.216190, 3.216555, 3.216162, 3.216298, 3.216625, 3.216221, 3.216214, 3.216079, 3.216246, 3.216199
+
+=== Counter Statistics ===
+  Cycles: mean=5780.28M (0.02%)
+  Instructions: mean=5054.13M (0.00%)
+  Cache refs: mean=2169587.44k (0.00%)
+  Cache misses: mean=2710754 (0.02%)
+  Branch misses: mean=38025 (0.02%)
+  cacheMissRate: 0.0012
+  IPC: 0.8744
+  BranchMissesPerMillionInstructions: 7.52
+
+insertionSort: size= 40000
+=== Timing Summary ===
+  Mean:   0.677177 seconds
+  StdDev: 0.001195 seconds
+  RelStd: 0.18%
+  Min:    0.676593 seconds
+  Max:    0.681752 seconds
+
+  Times: 0.677373, 0.681752, 0.678610, 0.676974, 0.676676, 0.676662, 0.676613, 0.676893, 0.678518, 0.676681, 0.676802, 0.676613, 0.676712, 0.676619, 0.676593, 0.676854, 0.676683, 0.676680, 0.676621, 0.676611
+
+=== Counter Statistics ===
+  Cycles: mean=1216.40M (0.10%)
+  Instructions: mean=3613.39M (0.00%)
+  Cache refs: mean=803105.41k (0.00%)
+  Cache misses: mean=1939773 (0.34%)
+  Branch misses: mean=40230 (0.06%)
+  cacheMissRate: 0.0024
+  IPC: 2.9706
+  BranchMissesPerMillionInstructions: 11.13
+
+bubbleSort: size= 40000
+=== Timing Summary ===
+  Mean:   3.564175 seconds
+  StdDev: 0.001460 seconds
+  RelStd: 0.04%
+  Min:    3.563607 seconds
+  Max:    3.570394 seconds
+
+  Times: 3.570394, 3.564970, 3.563888, 3.564431, 3.563841, 3.563671, 3.563690, 3.563795, 3.563819, 3.563805, 3.563659, 3.563614, 3.563738, 3.563748, 3.563723, 3.563653, 3.563805, 3.563741, 3.563607, 3.563905
+
+=== Counter Statistics ===
+  Cycles: mean=6405.02M (0.02%)
+  Instructions: mean=5600.14M (0.00%)
+  Cache refs: mean=2402829.30k (0.00%)
+  Cache misses: mean=3236454 (0.18%)
+  Branch misses: mean=40022 (0.02%)
+  cacheMissRate: 0.0013
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 7.15
+
+insertionSort: size= 42000
+=== Timing Summary ===
+  Mean:   0.745616 seconds
+  StdDev: 0.001198 seconds
+  RelStd: 0.16%
+  Min:    0.744935 seconds
+  Max:    0.750443 seconds
+
+  Times: 0.745882, 0.750443, 0.747101, 0.745291, 0.745104, 0.745174, 0.745424, 0.745151, 0.745652, 0.745530, 0.745346, 0.745065, 0.745158, 0.745031, 0.745281, 0.745115, 0.745159, 0.745057, 0.745412, 0.744935
+
+=== Counter Statistics ===
+  Cycles: mean=1339.40M (0.10%)
+  Instructions: mean=3979.73M (0.00%)
+  Cache refs: mean=884520.60k (0.00%)
+  Cache misses: mean=2103685 (0.02%)
+  Branch misses: mean=42250 (0.06%)
+  cacheMissRate: 0.0024
+  IPC: 2.9713
+  BranchMissesPerMillionInstructions: 10.62
+
+bubbleSort: size= 42000
+=== Timing Summary ===
+  Mean:   3.930132 seconds
+  StdDev: 0.001990 seconds
+  RelStd: 0.05%
+  Min:    3.929121 seconds
+  Max:    3.937435 seconds
+
+  Times: 3.937435, 3.930293, 3.929626, 3.930802, 3.929602, 3.929352, 3.929202, 3.929181, 3.929162, 3.929295, 3.929121, 3.929523, 3.929331, 3.934085, 3.929536, 3.929876, 3.929328, 3.929288, 3.929350, 3.929250
+
+=== Counter Statistics ===
+  Cycles: mean=7061.83M (0.02%)
+  Instructions: mean=6174.15M (0.00%)
+  Cache refs: mean=2648231.52k (0.00%)
+  Cache misses: mean=3316144 (0.01%)
+  Branch misses: mean=42031 (0.03%)
+  cacheMissRate: 0.0013
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 6.81
+
+insertionSort: size= 44000
+=== Timing Summary ===
+  Mean:   0.816519 seconds
+  StdDev: 0.001438 seconds
+  RelStd: 0.18%
+  Min:    0.815810 seconds
+  Max:    0.822559 seconds
+
+  Times: 0.816559, 0.822559, 0.817011, 0.816020, 0.816226, 0.816885, 0.816187, 0.817161, 0.816347, 0.815975, 0.815810, 0.815994, 0.815987, 0.815899, 0.815973, 0.816004, 0.815930, 0.815924, 0.816006, 0.815915
+
+=== Counter Statistics ===
+  Cycles: mean=1466.76M (0.10%)
+  Instructions: mean=4358.09M (0.00%)
+  Cache refs: mean=968606.23k (0.00%)
+  Cache misses: mean=2314448 (0.18%)
+  Branch misses: mean=44251 (0.05%)
+  cacheMissRate: 0.0024
+  IPC: 2.9712
+  BranchMissesPerMillionInstructions: 10.15
+
+bubbleSort: size= 44000
+=== Timing Summary ===
+  Mean:   4.312798 seconds
+  StdDev: 0.002199 seconds
+  RelStd: 0.05%
+  Min:    4.311895 seconds
+  Max:    4.322204 seconds
+
+  Times: 4.322204, 4.313577, 4.312845, 4.312690, 4.312410, 4.312460, 4.312625, 4.312766, 4.312057, 4.312210, 4.311909, 4.312011, 4.311895, 4.311967, 4.311966, 4.312029, 4.312477, 4.311995, 4.311917, 4.311950
+
+=== Counter Statistics ===
+  Cycles: mean=7750.19M (0.03%)
+  Instructions: mean=6776.15M (0.00%)
+  Cache refs: mean=2904303.24k (0.00%)
+  Cache misses: mean=3824116 (0.01%)
+  Branch misses: mean=44033 (0.01%)
+  cacheMissRate: 0.0013
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 6.50
+
+insertionSort: size= 46000
+=== Timing Summary ===
+  Mean:   0.890835 seconds
+  StdDev: 0.001487 seconds
+  RelStd: 0.17%
+  Min:    0.890181 seconds
+  Max:    0.897152 seconds
+
+  Times: 0.891157, 0.897152, 0.891194, 0.890233, 0.890354, 0.890547, 0.891312, 0.890824, 0.890406, 0.890212, 0.890262, 0.890437, 0.890454, 0.890351, 0.890419, 0.890305, 0.890181, 0.890379, 0.890211, 0.890306
+
+=== Counter Statistics ===
+  Cycles: mean=1600.38M (0.10%)
+  Instructions: mean=4756.09M (0.00%)
+  Cache refs: mean=1057057.49k (0.00%)
+  Cache misses: mean=2470826 (0.02%)
+  Branch misses: mean=46246 (0.06%)
+  cacheMissRate: 0.0023
+  IPC: 2.9719
+  BranchMissesPerMillionInstructions: 9.72
+
+bubbleSort: size= 46000
+=== Timing Summary ===
+  Mean:   4.713977 seconds
+  StdDev: 0.003040 seconds
+  RelStd: 0.06%
+  Min:    4.712959 seconds
+  Max:    4.727167 seconds
+
+  Times: 4.727167, 4.714269, 4.713530, 4.713083, 4.713016, 4.713687, 4.713256, 4.713282, 4.713088, 4.713215, 4.713352, 4.713183, 4.713061, 4.713504, 4.712975, 4.713096, 4.713151, 4.712959, 4.713416, 4.713253
+
+=== Counter Statistics ===
+  Cycles: mean=8470.82M (0.02%)
+  Instructions: mean=7406.16M (0.00%)
+  Cache refs: mean=3172741.74k (0.00%)
+  Cache misses: mean=3900512 (0.01%)
+  Branch misses: mean=46031 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 6.22
+
+insertionSort: size= 48000
+=== Timing Summary ===
+  Mean:   0.969898 seconds
+  StdDev: 0.004281 seconds
+  RelStd: 0.44%
+  Min:    0.968614 seconds
+  Max:    0.988535 seconds
+
+  Times: 0.969176, 0.988535, 0.969152, 0.968851, 0.968794, 0.969250, 0.969455, 0.969159, 0.968958, 0.968707, 0.969060, 0.968776, 0.968703, 0.968811, 0.968822, 0.968823, 0.968753, 0.968614, 0.968767, 0.968786
+
+=== Counter Statistics ===
+  Cycles: mean=1742.40M (0.36%)
+  Instructions: mean=5175.91M (0.00%)
+  Cache refs: mean=1150358.34k (0.00%)
+  Cache misses: mean=2663199 (0.02%)
+  Branch misses: mean=48257 (0.08%)
+  cacheMissRate: 0.0023
+  IPC: 2.9706
+  BranchMissesPerMillionInstructions: 9.32
+
+bubbleSort: size= 48000
+=== Timing Summary ===
+  Mean:   5.132852 seconds
+  StdDev: 0.002351 seconds
+  RelStd: 0.05%
+  Min:    5.131599 seconds
+  Max:    5.142516 seconds
+
+  Times: 5.142516, 5.133311, 5.132215, 5.132294, 5.131735, 5.131656, 5.132432, 5.134873, 5.133124, 5.132407, 5.131957, 5.131661, 5.131819, 5.132952, 5.133104, 5.131746, 5.131841, 5.132064, 5.131599, 5.131742
+
+=== Counter Statistics ===
+  Cycles: mean=9223.40M (0.03%)
+  Instructions: mean=8064.17M (0.00%)
+  Cache refs: mean=3454029.23k (0.00%)
+  Cache misses: mean=4060976 (0.01%)
+  Branch misses: mean=48036 (0.03%)
+  cacheMissRate: 0.0012
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 5.96
+
+insertionSort: size= 50000
+=== Timing Summary ===
+  Mean:   1.052300 seconds
+  StdDev: 0.001280 seconds
+  RelStd: 0.12%
+  Min:    1.051681 seconds
+  Max:    1.057476 seconds
+
+  Times: 1.053444, 1.057476, 1.051969, 1.051893, 1.052370, 1.053307, 1.052175, 1.051912, 1.051830, 1.051681, 1.051928, 1.051795, 1.051775, 1.051701, 1.051764, 1.051765, 1.051769, 1.051860, 1.051770, 1.051813
+
+=== Counter Statistics ===
+  Cycles: mean=1890.56M (0.07%)
+  Instructions: mean=5620.45M (0.00%)
+  Cache refs: mean=1249149.42k (0.00%)
+  Cache misses: mean=2843473 (0.02%)
+  Branch misses: mean=50279 (0.04%)
+  cacheMissRate: 0.0023
+  IPC: 2.9729
+  BranchMissesPerMillionInstructions: 8.95
+
+bubbleSort: size= 50000
+=== Timing Summary ===
+  Mean:   5.569474 seconds
+  StdDev: 0.002331 seconds
+  RelStd: 0.04%
+  Min:    5.568508 seconds
+  Max:    5.579439 seconds
+
+  Times: 5.579439, 5.570684, 5.569288, 5.569050, 5.568646, 5.569243, 5.568975, 5.568707, 5.569065, 5.569063, 5.568937, 5.568586, 5.568686, 5.568508, 5.568683, 5.568881, 5.568637, 5.568573, 5.568787, 5.569037
+
+=== Counter Statistics ===
+  Cycles: mean=10008.61M (0.03%)
+  Instructions: mean=8750.18M (0.00%)
+  Cache refs: mean=3748807.54k (0.00%)
+  Cache misses: mean=4457314 (0.05%)
+  Branch misses: mean=50031 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 5.72
+
+insertionSort: size= 52000
+=== Timing Summary ===
+  Mean:   1.137716 seconds
+  StdDev: 0.001298 seconds
+  RelStd: 0.11%
+  Min:    1.137013 seconds
+  Max:    1.141980 seconds
+
+  Times: 1.141095, 1.141980, 1.137315, 1.137105, 1.137467, 1.138001, 1.137385, 1.137019, 1.137266, 1.137264, 1.137355, 1.137208, 1.137274, 1.137207, 1.137114, 1.137247, 1.137013, 1.137486, 1.137276, 1.137242
+
+=== Counter Statistics ===
+  Cycles: mean=2044.11M (0.07%)
+  Instructions: mean=6077.06M (0.00%)
+  Cache refs: mean=1350626.29k (0.00%)
+  Cache misses: mean=3073180 (0.01%)
+  Branch misses: mean=52306 (0.04%)
+  cacheMissRate: 0.0023
+  IPC: 2.9730
+  BranchMissesPerMillionInstructions: 8.61
+
+bubbleSort: size= 52000
+=== Timing Summary ===
+  Mean:   6.024608 seconds
+  StdDev: 0.002568 seconds
+  RelStd: 0.04%
+  Min:    6.022982 seconds
+  Max:    6.034534 seconds
+
+  Times: 6.034534, 6.024517, 6.023750, 6.023282, 6.023027, 6.023411, 6.023387, 6.023927, 6.023088, 6.022982, 6.023666, 6.023231, 6.024917, 6.028526, 6.024309, 6.025021, 6.023998, 6.024010, 6.024857, 6.023729
+
+=== Counter Statistics ===
+  Cycles: mean=10825.63M (0.03%)
+  Instructions: mean=9464.18M (0.00%)
+  Cache refs: mean=4054269.55k (0.00%)
+  Cache misses: mean=4910466 (0.01%)
+  Branch misses: mean=52038 (0.02%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 5.50
+
+insertionSort: size= 54000
+=== Timing Summary ===
+  Mean:   1.226751 seconds
+  StdDev: 0.001553 seconds
+  RelStd: 0.13%
+  Min:    1.225858 seconds
+  Max:    1.232397 seconds
+
+  Times: 1.232397, 1.229780, 1.226113, 1.226029, 1.227583, 1.226809, 1.226252, 1.225858, 1.225998, 1.226169, 1.226661, 1.225998, 1.225973, 1.226208, 1.226155, 1.225938, 1.226228, 1.226149, 1.226674, 1.226044
+
+=== Counter Statistics ===
+  Cycles: mean=2203.83M (0.09%)
+  Instructions: mean=6553.06M (0.00%)
+  Cache refs: mean=1456409.01k (0.00%)
+  Cache misses: mean=3217140 (0.01%)
+  Branch misses: mean=54293 (0.04%)
+  cacheMissRate: 0.0022
+  IPC: 2.9735
+  BranchMissesPerMillionInstructions: 8.29
+
+bubbleSort: size= 54000
+=== Timing Summary ===
+  Mean:   6.496653 seconds
+  StdDev: 0.002694 seconds
+  RelStd: 0.04%
+  Min:    6.495594 seconds
+  Max:    6.508276 seconds
+
+  Times: 6.508276, 6.497091, 6.496087, 6.495904, 6.495730, 6.495744, 6.495594, 6.496236, 6.495858, 6.496043, 6.496100, 6.495872, 6.495671, 6.495992, 6.495936, 6.495675, 6.495879, 6.495966, 6.496944, 6.496455
+
+=== Counter Statistics ===
+  Cycles: mean=11674.22M (0.03%)
+  Instructions: mean=10206.19M (0.00%)
+  Cache refs: mean=4372040.33k (0.00%)
+  Cache misses: mean=5168940 (0.01%)
+  Branch misses: mean=54032 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8743
+  BranchMissesPerMillionInstructions: 5.29
+
+insertionSort: size= 56000
+=== Timing Summary ===
+  Mean:   1.321706 seconds
+  StdDev: 0.001950 seconds
+  RelStd: 0.15%
+  Min:    1.320787 seconds
+  Max:    1.329711 seconds
+
+  Times: 1.329711, 1.323834, 1.321334, 1.320907, 1.322220, 1.321461, 1.321267, 1.321118, 1.321108, 1.320893, 1.321082, 1.321179, 1.320951, 1.320866, 1.321187, 1.320905, 1.321142, 1.321117, 1.320787, 1.321048
+
+=== Counter Statistics ===
+  Cycles: mean=2374.67M (0.11%)
+  Instructions: mean=7060.52M (0.00%)
+  Cache refs: mean=1569187.24k (0.00%)
+  Cache misses: mean=3513336 (0.01%)
+  Branch misses: mean=56325 (0.04%)
+  cacheMissRate: 0.0022
+  IPC: 2.9733
+  BranchMissesPerMillionInstructions: 7.98
+
+bubbleSort: size= 56000
+=== Timing Summary ===
+  Mean:   6.987214 seconds
+  StdDev: 0.002816 seconds
+  RelStd: 0.04%
+  Min:    6.985878 seconds
+  Max:    6.998848 seconds
+
+  Times: 6.998848, 6.986950, 6.988201, 6.985949, 6.986475, 6.985917, 6.986610, 6.985945, 6.986315, 6.985878, 6.986544, 6.989770, 6.986921, 6.986409, 6.985979, 6.986670, 6.986642, 6.985960, 6.986393, 6.985898
+
+=== Counter Statistics ===
+  Cycles: mean=12555.21M (0.03%)
+  Instructions: mean=10976.20M (0.00%)
+  Cache refs: mean=4704804.35k (0.00%)
+  Cache misses: mean=5599282 (0.04%)
+  Branch misses: mean=56037 (0.02%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 5.11
+
+insertionSort: size= 58000
+=== Timing Summary ===
+  Mean:   1.418871 seconds
+  StdDev: 0.002169 seconds
+  RelStd: 0.15%
+  Min:    1.417997 seconds
+  Max:    1.428073 seconds
+
+  Times: 1.428073, 1.419977, 1.418377, 1.418208, 1.419672, 1.417997, 1.418539, 1.418323, 1.418210, 1.418323, 1.418285, 1.418088, 1.418105, 1.418181, 1.418412, 1.418076, 1.418175, 1.418170, 1.418046, 1.418184
+
+=== Counter Statistics ===
+  Cycles: mean=2549.22M (0.12%)
+  Instructions: mean=7581.04M (0.00%)
+  Cache refs: mean=1684864.33k (0.00%)
+  Cache misses: mean=3684135 (0.01%)
+  Branch misses: mean=58318 (0.03%)
+  cacheMissRate: 0.0022
+  IPC: 2.9739
+  BranchMissesPerMillionInstructions: 7.69
+
+bubbleSort: size= 58000
+=== Timing Summary ===
+  Mean:   7.494586 seconds
+  StdDev: 0.002916 seconds
+  RelStd: 0.04%
+  Min:    7.493428 seconds
+  Max:    7.507243 seconds
+
+  Times: 7.507243, 7.493983, 7.493590, 7.494612, 7.494079, 7.494163, 7.493875, 7.493762, 7.493871, 7.493995, 7.493428, 7.494357, 7.493721, 7.493866, 7.493827, 7.494004, 7.493662, 7.493629, 7.493964, 7.494088
+
+=== Counter Statistics ===
+  Cycles: mean=13467.94M (0.03%)
+  Instructions: mean=11774.20M (0.00%)
+  Cache refs: mean=5048468.40k (0.00%)
+  Cache misses: mean=6044952 (0.01%)
+  Branch misses: mean=58033 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 4.93
+
+insertionSort: size= 60000
+=== Timing Summary ===
+  Mean:   1.519153 seconds
+  StdDev: 0.002251 seconds
+  RelStd: 0.15%
+  Min:    1.518188 seconds
+  Max:    1.528675 seconds
+
+  Times: 1.528675, 1.519919, 1.518278, 1.520406, 1.518815, 1.518453, 1.518696, 1.518684, 1.518507, 1.518242, 1.518355, 1.518385, 1.518387, 1.518188, 1.518376, 1.518517, 1.518917, 1.518325, 1.518434, 1.518510
+
+=== Counter Statistics ===
+  Cycles: mean=2729.42M (0.11%)
+  Instructions: mean=8116.51M (0.00%)
+  Cache refs: mean=1803864.20k (0.00%)
+  Cache misses: mean=3975160 (0.01%)
+  Branch misses: mean=60325 (0.04%)
+  cacheMissRate: 0.0022
+  IPC: 2.9737
+  BranchMissesPerMillionInstructions: 7.43
+
+bubbleSort: size= 60000
+=== Timing Summary ===
+  Mean:   8.021294 seconds
+  StdDev: 0.004689 seconds
+  RelStd: 0.06%
+  Min:    8.018984 seconds
+  Max:    8.035549 seconds
+
+  Times: 8.034909, 8.019170, 8.019573, 8.021380, 8.035549, 8.020771, 8.019234, 8.020848, 8.020012, 8.019535, 8.019629, 8.019456, 8.019989, 8.019369, 8.019172, 8.018984, 8.019166, 8.019731, 8.019096, 8.020308
+
+=== Counter Statistics ===
+  Cycles: mean=14413.83M (0.05%)
+  Instructions: mean=12600.21M (0.00%)
+  Cache refs: mean=5403454.57k (0.00%)
+  Cache misses: mean=6383700 (0.06%)
+  Branch misses: mean=60039 (0.02%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 4.76
+
+insertionSort: size= 62000
+=== Timing Summary ===
+  Mean:   1.621639 seconds
+  StdDev: 0.003289 seconds
+  RelStd: 0.20%
+  Min:    1.620312 seconds
+  Max:    1.633811 seconds
+
+  Times: 1.633811, 1.621246, 1.620328, 1.628482, 1.621080, 1.620923, 1.620769, 1.620863, 1.620535, 1.620429, 1.620518, 1.620522, 1.620385, 1.620359, 1.620454, 1.620312, 1.620449, 1.620425, 1.620316, 1.620581
+
+=== Counter Statistics ===
+  Cycles: mean=2912.55M (0.14%)
+  Instructions: mean=8662.99M (0.00%)
+  Cache refs: mean=1925309.76k (0.00%)
+  Cache misses: mean=4115413 (0.01%)
+  Branch misses: mean=62374 (0.05%)
+  cacheMissRate: 0.0021
+  IPC: 2.9744
+  BranchMissesPerMillionInstructions: 7.20
+
+bubbleSort: size= 62000
+=== Timing Summary ===
+  Mean:   8.568251 seconds
+  StdDev: 0.013714 seconds
+  RelStd: 0.16%
+  Min:    8.563624 seconds
+  Max:    8.627102 seconds
+
+  Times: 8.627102, 8.574016, 8.566313, 8.569042, 8.563748, 8.563775, 8.563668, 8.563624, 8.564448, 8.564311, 8.564714, 8.564208, 8.563759, 8.563831, 8.563762, 8.564637, 8.566611, 8.565042, 8.564178, 8.564240
+
+=== Counter Statistics ===
+  Cycles: mean=15393.35M (0.09%)
+  Instructions: mean=13454.22M (0.00%)
+  Cache refs: mean=5768889.36k (0.00%)
+  Cache misses: mean=6688219 (0.01%)
+  Branch misses: mean=62053 (0.07%)
+  cacheMissRate: 0.0012
+  IPC: 0.8740
+  BranchMissesPerMillionInstructions: 4.61
+
+insertionSort: size= 64000
+=== Timing Summary ===
+  Mean:   1.727772 seconds
+  StdDev: 0.003266 seconds
+  RelStd: 0.19%
+  Min:    1.726564 seconds
+  Max:    1.741876 seconds
+
+  Times: 1.741876, 1.727347, 1.726994, 1.728335, 1.727156, 1.727204, 1.726564, 1.726822, 1.726621, 1.726577, 1.728063, 1.727047, 1.726891, 1.726964, 1.726842, 1.726727, 1.726766, 1.726778, 1.726735, 1.727133
+
+=== Counter Statistics ===
+  Cycles: mean=3104.15M (0.15%)
+  Instructions: mean=9231.22M (0.00%)
+  Cache refs: mean=2051591.67k (0.00%)
+  Cache misses: mean=4471403 (0.02%)
+  Branch misses: mean=64388 (0.04%)
+  cacheMissRate: 0.0022
+  IPC: 2.9738
+  BranchMissesPerMillionInstructions: 6.97
+
+bubbleSort: size= 64000
+=== Timing Summary ===
+  Mean:   9.126219 seconds
+  StdDev: 0.003523 seconds
+  RelStd: 0.04%
+  Min:    9.124847 seconds
+  Max:    9.141167 seconds
+
+  Times: 9.141167, 9.127314, 9.125147, 9.125399, 9.125104, 9.125129, 9.125355, 9.124890, 9.125249, 9.124999, 9.125138, 9.125615, 9.125027, 9.128189, 9.124847, 9.124910, 9.125113, 9.125208, 9.125486, 9.125097
+
+=== Counter Statistics ===
+  Cycles: mean=16399.23M (0.03%)
+  Instructions: mean=14336.22M (0.00%)
+  Cache refs: mean=6147155.91k (0.00%)
+  Cache misses: mean=7420260 (0.01%)
+  Branch misses: mean=64041 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 4.47
+
+insertionSort: size= 66000
+=== Timing Summary ===
+  Mean:   1.836480 seconds
+  StdDev: 0.003484 seconds
+  RelStd: 0.19%
+  Min:    1.835253 seconds
+  Max:    1.851557 seconds
+
+  Times: 1.851557, 1.835806, 1.835911, 1.837068, 1.835444, 1.835517, 1.835638, 1.836334, 1.835684, 1.835677, 1.835253, 1.835473, 1.835476, 1.835423, 1.835276, 1.835827, 1.836040, 1.835253, 1.835489, 1.835455
+
+=== Counter Statistics ===
+  Cycles: mean=3299.31M (0.15%)
+  Instructions: mean=9814.51M (0.00%)
+  Cache refs: mean=2181217.44k (0.00%)
+  Cache misses: mean=4590426 (0.15%)
+  Branch misses: mean=66356 (0.03%)
+  cacheMissRate: 0.0021
+  IPC: 2.9747
+  BranchMissesPerMillionInstructions: 6.76
+
+bubbleSort: size= 66000
+=== Timing Summary ===
+  Mean:   9.706755 seconds
+  StdDev: 0.005138 seconds
+  RelStd: 0.05%
+  Min:    9.703656 seconds
+  Max:    9.723354 seconds
+
+  Times: 9.723354, 9.711714, 9.707518, 9.718636, 9.705589, 9.704414, 9.704347, 9.704804, 9.704534, 9.704070, 9.704085, 9.704209, 9.704382, 9.707682, 9.704442, 9.704232, 9.704204, 9.704174, 9.703656, 9.705046
+
+=== Counter Statistics ===
+  Cycles: mean=17441.35M (0.04%)
+  Instructions: mean=15246.23M (0.00%)
+  Cache refs: mean=6536770.89k (0.00%)
+  Cache misses: mean=7451266 (0.01%)
+  Branch misses: mean=66046 (0.02%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 4.33
+
+insertionSort: size= 68000
+=== Timing Summary ===
+  Mean:   1.946958 seconds
+  StdDev: 0.003169 seconds
+  RelStd: 0.16%
+  Min:    1.945839 seconds
+  Max:    1.960685 seconds
+
+  Times: 1.960685, 1.946465, 1.946209, 1.947597, 1.946161, 1.946588, 1.946158, 1.946118, 1.945839, 1.946138, 1.946164, 1.945991, 1.946299, 1.946044, 1.946270, 1.946126, 1.946188, 1.946157, 1.945883, 1.946087
+
+=== Counter Statistics ===
+  Cycles: mean=3498.11M (0.13%)
+  Instructions: mean=10405.56M (0.00%)
+  Cache refs: mean=2312568.15k (0.00%)
+  Cache misses: mean=4952130 (0.01%)
+  Branch misses: mean=68401 (0.05%)
+  cacheMissRate: 0.0021
+  IPC: 2.9746
+  BranchMissesPerMillionInstructions: 6.57
+
+bubbleSort: size= 68000
+=== Timing Summary ===
+  Mean:   10.303205 seconds
+  StdDev: 0.004024 seconds
+  RelStd: 0.04%
+  Min:    10.301069 seconds
+  Max:    10.318483 seconds
+
+  Times: 10.318483, 10.302661, 10.301372, 10.301109, 10.302042, 10.301910, 10.301135, 10.302273, 10.302687, 10.304778, 10.301865, 10.302083, 10.301924, 10.302467, 10.301850, 10.301069, 10.301073, 10.301224, 10.301843, 10.310241
+
+=== Counter Statistics ===
+  Cycles: mean=18513.65M (0.03%)
+  Instructions: mean=16184.24M (0.00%)
+  Cache refs: mean=6936107.02k (0.00%)
+  Cache misses: mean=8099091 (0.01%)
+  Branch misses: mean=68045 (0.01%)
+  cacheMissRate: 0.0012
+  IPC: 0.8742
+  BranchMissesPerMillionInstructions: 4.20
+
+insertionSort: size= 70000
+=== Timing Summary ===
+  Mean:   2.061274 seconds
+  StdDev: 0.003705 seconds
+  RelStd: 0.18%
+  Min:    2.059695 seconds
+  Max:    2.076163 seconds
+
+  Times: 2.076163, 2.060567, 2.062884, 2.060300, 2.060324, 2.060049, 2.059961, 2.060237, 2.060065, 2.060324, 2.059900, 2.059960, 2.059751, 2.059859, 2.059763, 2.059926, 2.059870, 2.059846, 2.059695, 2.066047
+
+=== Counter Statistics ===
+  Cycles: mean=3703.23M (0.14%)
+  Instructions: mean=11014.52M (0.00%)
+  Cache refs: mean=2447899.29k (0.00%)
+  Cache misses: mean=5143964 (0.01%)
+  Branch misses: mean=70417 (0.06%)
+  cacheMissRate: 0.0021
+  IPC: 2.9743
+  BranchMissesPerMillionInstructions: 6.39
+
+bubbleSort: size= 70000
+=== Timing Summary ===
+  Mean:   10.920346 seconds
+  StdDev: 0.005222 seconds
+  RelStd: 0.05%
+  Min:    10.916450 seconds
+  Max:    10.936415 seconds
+
+  Times: 10.936415, 10.916790, 10.917910, 10.917022, 10.916450, 10.916695, 10.916929, 10.930899, 10.925959, 10.918983, 10.917420, 10.923671, 10.922670, 10.917338, 10.918189, 10.917709, 10.922671, 10.917866, 10.918369, 10.916963
+
+=== Counter Statistics ===
+  Cycles: mean=19620.97M (0.03%)
+  Instructions: mean=17150.25M (0.00%)
+  Cache refs: mean=7347425.63k (0.00%)
+  Cache misses: mean=8426621 (0.05%)
+  Branch misses: mean=70050 (0.02%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 4.08
+
+insertionSort: size= 72000
+=== Timing Summary ===
+  Mean:   2.179939 seconds
+  StdDev: 0.003438 seconds
+  RelStd: 0.16%
+  Min:    2.178398 seconds
+  Max:    2.194376 seconds
+
+  Times: 2.194376, 2.178883, 2.180967, 2.178913, 2.178988, 2.178719, 2.178826, 2.178489, 2.178687, 2.179389, 2.182200, 2.180218, 2.178985, 2.179515, 2.178459, 2.178809, 2.178586, 2.178398, 2.178497, 2.178868
+
+=== Counter Statistics ===
+  Cycles: mean=3916.45M (0.12%)
+  Instructions: mean=11650.88M (0.00%)
+  Cache refs: mean=2589320.54k (0.00%)
+  Cache misses: mean=5416490 (0.01%)
+  Branch misses: mean=72400 (0.04%)
+  cacheMissRate: 0.0021
+  IPC: 2.9749
+  BranchMissesPerMillionInstructions: 6.21
+
+bubbleSort: size= 72000
+=== Timing Summary ===
+  Mean:   11.551954 seconds
+  StdDev: 0.004961 seconds
+  RelStd: 0.04%
+  Min:    11.548807 seconds
+  Max:    11.568256 seconds
+
+  Times: 11.568256, 11.550519, 11.549755, 11.550183, 11.548807, 11.549668, 11.552140, 11.548918, 11.549398, 11.563383, 11.549939, 11.549322, 11.549949, 11.549807, 11.551097, 11.551165, 11.549951, 11.549753, 11.556712, 11.550367
+
+=== Counter Statistics ===
+  Cycles: mean=20757.65M (0.04%)
+  Instructions: mean=18144.25M (0.00%)
+  Cache refs: mean=7772833.25k (0.00%)
+  Cache misses: mean=8777132 (0.00%)
+  Branch misses: mean=72042 (0.01%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 3.97
+
+insertionSort: size= 74000
+=== Timing Summary ===
+  Mean:   2.305367 seconds
+  StdDev: 0.004093 seconds
+  RelStd: 0.18%
+  Min:    2.303910 seconds
+  Max:    2.322968 seconds
+
+  Times: 2.322968, 2.304127, 2.307155, 2.304875, 2.304345, 2.304415, 2.304541, 2.303991, 2.304766, 2.304032, 2.304513, 2.304128, 2.304399, 2.304219, 2.303910, 2.304099, 2.304338, 2.303930, 2.304186, 2.304401
+
+=== Counter Statistics ===
+  Cycles: mean=4142.04M (0.14%)
+  Instructions: mean=12320.94M (0.00%)
+  Cache refs: mean=2738229.78k (0.00%)
+  Cache misses: mean=5726232 (0.01%)
+  Branch misses: mean=74428 (0.04%)
+  cacheMissRate: 0.0021
+  IPC: 2.9746
+  BranchMissesPerMillionInstructions: 6.04
+
+bubbleSort: size= 74000
+=== Timing Summary ===
+  Mean:   12.204634 seconds
+  StdDev: 0.007042 seconds
+  RelStd: 0.06%
+  Min:    12.200140 seconds
+  Max:    12.221417 seconds
+
+  Times: 12.221417, 12.219702, 12.200577, 12.200636, 12.200242, 12.201525, 12.200552, 12.200140, 12.200164, 12.200291, 12.201218, 12.200784, 12.200192, 12.201198, 12.201145, 12.202255, 12.207245, 12.213772, 12.217752, 12.201871
+
+=== Counter Statistics ===
+  Cycles: mean=21929.47M (0.05%)
+  Instructions: mean=19166.26M (0.00%)
+  Cache refs: mean=8213728.88k (0.00%)
+  Cache misses: mean=9448444 (0.01%)
+  Branch misses: mean=74050 (0.06%)
+  cacheMissRate: 0.0012
+  IPC: 0.8740
+  BranchMissesPerMillionInstructions: 3.86
+
+insertionSort: size= 76000
+=== Timing Summary ===
+  Mean:   2.429950 seconds
+  StdDev: 0.005585 seconds
+  RelStd: 0.23%
+  Min:    2.428121 seconds
+  Max:    2.454135 seconds
+
+  Times: 2.454135, 2.429113, 2.431169, 2.429038, 2.428860, 2.428630, 2.428861, 2.428981, 2.428530, 2.428517, 2.428473, 2.428396, 2.428319, 2.428308, 2.428455, 2.428405, 2.428308, 2.428190, 2.428121, 2.428189
+
+=== Counter Statistics ===
+  Cycles: mean=4364.95M (0.11%)
+  Instructions: mean=12987.86M (0.00%)
+  Cache refs: mean=2886440.95k (0.00%)
+  Cache misses: mean=5964222 (0.04%)
+  Branch misses: mean=76454 (0.06%)
+  cacheMissRate: 0.0021
+  IPC: 2.9755
+  BranchMissesPerMillionInstructions: 5.89
+
+bubbleSort: size= 76000
+=== Timing Summary ===
+  Mean:   12.870119 seconds
+  StdDev: 0.005486 seconds
+  RelStd: 0.04%
+  Min:    12.867073 seconds
+  Max:    12.891434 seconds
+
+  Times: 12.891434, 12.867546, 12.868276, 12.867458, 12.867073, 12.867810, 12.869026, 12.877675, 12.867409, 12.867539, 12.868292, 12.870100, 12.868458, 12.868051, 12.867902, 12.874283, 12.868110, 12.868325, 12.868401, 12.869221
+
+=== Counter Statistics ===
+  Cycles: mean=23126.78M (0.03%)
+  Instructions: mean=20216.27M (0.00%)
+  Cache refs: mean=8661927.34k (0.00%)
+  Cache misses: mean=9800930 (0.00%)
+  Branch misses: mean=76047 (0.03%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 3.76
+
+insertionSort: size= 78000
+=== Timing Summary ===
+  Mean:   2.559267 seconds
+  StdDev: 0.003834 seconds
+  RelStd: 0.15%
+  Min:    2.557671 seconds
+  Max:    2.575654 seconds
+
+  Times: 2.575654, 2.558747, 2.561064, 2.558074, 2.558178, 2.559876, 2.558376, 2.558329, 2.558081, 2.558636, 2.558078, 2.558250, 2.557966, 2.558040, 2.557992, 2.557786, 2.558211, 2.558134, 2.558198, 2.557671
+
+=== Counter Statistics ===
+  Cycles: mean=4598.34M (0.12%)
+  Instructions: mean=13683.51M (0.00%)
+  Cache refs: mean=3041034.94k (0.00%)
+  Cache misses: mean=6131265 (0.01%)
+  Branch misses: mean=78442 (0.04%)
+  cacheMissRate: 0.0020
+  IPC: 2.9757
+  BranchMissesPerMillionInstructions: 5.73
+
+bubbleSort: size= 78000
+=== Timing Summary ===
+  Mean:   13.556927 seconds
+  StdDev: 0.005202 seconds
+  RelStd: 0.04%
+  Min:    13.554286 seconds
+  Max:    13.577911 seconds
+
+  Times: 13.577911, 13.558337, 13.554536, 13.554404, 13.555111, 13.554943, 13.554748, 13.554286, 13.554415, 13.555792, 13.555564, 13.555095, 13.555303, 13.555637, 13.563528, 13.555667, 13.556106, 13.555428, 13.555381, 13.556354
+
+=== Counter Statistics ===
+  Cycles: mean=24361.39M (0.03%)
+  Instructions: mean=21294.27M (0.00%)
+  Cache refs: mean=9124508.53k (0.00%)
+  Cache misses: mean=10292758 (0.00%)
+  Branch misses: mean=78047 (0.03%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 3.67
+
+insertionSort: size= 80000
+=== Timing Summary ===
+  Mean:   2.692999 seconds
+  StdDev: 0.003349 seconds
+  RelStd: 0.12%
+  Min:    2.691832 seconds
+  Max:    2.707377 seconds
+
+  Times: 2.707377, 2.692684, 2.694157, 2.691858, 2.692363, 2.692064, 2.692150, 2.691854, 2.691897, 2.692088, 2.692010, 2.693534, 2.692209, 2.691832, 2.692010, 2.691864, 2.691898, 2.692130, 2.692116, 2.691890
+
+=== Counter Statistics ===
+  Cycles: mean=4838.86M (0.10%)
+  Instructions: mean=14399.39M (0.00%)
+  Cache refs: mean=3200126.94k (0.00%)
+  Cache misses: mean=6515318 (0.01%)
+  Branch misses: mean=80451 (0.04%)
+  cacheMissRate: 0.0020
+  IPC: 2.9758
+  BranchMissesPerMillionInstructions: 5.59
+
+bubbleSort: size= 80000
+=== Timing Summary ===
+  Mean:   14.259971 seconds
+  StdDev: 0.004828 seconds
+  RelStd: 0.03%
+  Min:    14.257554 seconds
+  Max:    14.279819 seconds
+
+  Times: 14.279819, 14.258375, 14.258003, 14.258406, 14.257932, 14.257753, 14.258428, 14.257554, 14.258777, 14.258569, 14.264131, 14.262820, 14.258735, 14.258464, 14.259293, 14.259474, 14.258691, 14.257851, 14.257925, 14.258431
+
+=== Counter Statistics ===
+  Cycles: mean=25625.41M (0.03%)
+  Instructions: mean=22400.28M (0.00%)
+  Cache refs: mean=9599587.12k (0.00%)
+  Cache misses: mean=10855529 (0.00%)
+  Branch misses: mean=80040 (0.01%)
+  cacheMissRate: 0.0011
+  IPC: 0.8741
+  BranchMissesPerMillionInstructions: 3.57
+
+Results saved to: res/res-20260920-230933.txt
