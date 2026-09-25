@@ -8,19 +8,30 @@ This document describes the methodology for measuring function performance using
 ## Methodology
 
 ### Command-Line Arguments
-The program accepts four command-line arguments:
-1. **max_array_size**: Maximum array size to test
-2. **start_array_size**: Starting array size
-3. **step_size**: Increment between array sizes
-4. **noExp (E)**: Number of times to run each test for averaging
+The program accepts five command-line arguments:
+1. **expName**: Name of the experiment to run (prime, cache, or sorting)
+2. **E**: Number of experiments to run for averaging
+3. **start**: Starting value for the parameter being varied
+4. **step**: Increment between parameter values
+5. **end**: Ending value for the parameter being varied
+
+Note: For the **cache** experiment, the parameter varied is the stride (1, 2, 4, etc.). For the **sorting** experiment, the parameter varied is the array size. For the **prime** experiment, start/step/end are not used.
 
 ### Example Usage
 ```bash
-# Run with max array size 30000, starting at 16, step 2000, 3 experiments
-./perf_counters 30000 16 2000 3
+# Run prime experiment with 3 experiments
+./program prime 3
 
-# Via Makefile (uses: start=16, step=2000, max=30000, experiments=3)
-make run
+# Run cache experiment with 5 experiments, stride from 1 to 40 in steps of 1
+./program cache 5 1 1 40
+
+# Run sorting experiment with 10 experiments, array size from 2000 to 20000 in steps of 2000
+./program sorting 10 2000 2000 20000
+
+# Via Makefile targets
+make run        # Runs: ./program prime 3
+make cache      # Runs: ./program cache 5 1 1 40
+make sort       # Runs: ./program sorting 10 2000 2000 20000
 ```
 
 ---
@@ -45,8 +56,9 @@ Uses Linux `perf_event_open()` to access ARM Cortex-A72 PMU:
 - **RSD%**: Relative standard deviation across E experiments
 
 ### Output Value Units
-- Cycles, Instructions, CacheRefs: displayed in millions (M)
-- CacheMiss, BranchMiss: displayed in thousands (k)
+- Cycles, Instructions: displayed in millions (M)
+- Cache Refs: displayed in thousands (k)
+- Cache Misses, Branch Misses: raw values
 - IPC: ratio
 - CacheMiss%: percentage
 - BranchMissPerInstr: scientific notation
@@ -54,218 +66,60 @@ Uses Linux `perf_event_open()` to access ARM Cortex-A72 PMU:
 
 ---
 
-## Sorting Algorithms Tested
-
-Three sorting algorithms are benchmarked:
-
-| Algorithm | Complexity | Description |
-|-----------|------------|-------------|
-| **Insertion Sort** | O(n²) | Efficient for small or nearly-sorted arrays |
-| **Bubble Sort** | O(n²) | Simple comparison-based sort |
-| **Quick Sort** | O(n log n) avg | Fast divide-and-conquer algorithm |
-
-## Measurement Process
-
-### Initialization
-Counters are initialized with `exclude_kernel=1` and `exclude_hv=1` to count only user-space events.
 
 ### Execution Loop
-For each array size from start to max in steps of step_size:
+For the **sorting** experiment, array size is varied from start to end in steps of step:
 ```c
-for (int n = start_array_size; n <= max_array_size; n += step_size) {
-    for (int exp = 0; exp < noExp; exp++) {
-        // Generate random array
-        int *arr = malloc(n * sizeof(int));
-        generate_random_array(arr, n);
+for (int size = start; size <= end; size += step) {
+    int* arr = malloc(size * sizeof(int));
+    
+    for (int exp = 0; exp < E; exp++) {
+        srand(0);
+        generateRandomArray(arr, size);
         
         // Start measurement
-        clock_gettime(CLOCK_MONOTONIC, &start);
-        counters_start();
+        startExperiment();
         
         // Execute sorting algorithm
-        insertion_sort(arr, n);
-        // or bubble_sort(arr, n);
-        // or quick_sort(arr, 0, n-1);
+        insertionSort(arr, size);
+        // or bubbleSort(arr, size);
         
         // Stop measurement
-        counters_stop();
-        clock_gettime(CLOCK_MONOTONIC, &end);
-        
-        // Store results
-        times[exp] = elapsed_time;
-        cycles[exp] = ctrs[IDX_CYCLES].value;
-        instrs[exp] = ctrs[IDX_INSTRUCTIONS].value;
-        crefs[exp] = ctrs[IDX_CACHE_REFS].value;
-        cmiss[exp] = ctrs[IDX_CACHE_MISSES].value;
-        bmisses[exp] = ctrs[IDX_BRANCH_MISSES].value;
-        free(arr);
+        endExperiment(exp);
     }
-    print_statistics(label, cycles, instrs, crefs, cmiss, bmisses, times);
+    printTiming(outfile, times, E);
+    printCounterStats(outfile, counterVals, E);
+    free(arr);
 }
+```
+
+For the **cache** experiment, stride is varied from start to end in steps of step:
+```c
+for (int stride = start; stride <= end; stride += step) {
+    for (int exp = 0; exp < E; exp++) {
+        startExperiment();
+        strided(arr, size, stride);
+        endExperiment(exp);
+    }
+    printTiming(outfile, times, E);
+    printCounterStats(outfile, counterVals, E);
+}
+```
+
+For the **prime** experiment, the function is run E times with fixed parameters:
+```c
+for (int exp = 0; exp < E; exp++) {
+    startExperiment();
+    long result = nth_prime(100000);
+    endExperiment(exp);
+}
+printTiming(outfile, times, E);
+printCounterStats(outfile, counterVals, E);
 ```
 
 ### Output
 - Statistics printed to console with formatted columns
-- All data saved to `res/sorting_perf_<timestamp>.csv`
-- CSV columns: Workload, Cycles, Instructions, CacheRefs, CacheMiss, BranchMisses, IPC, CacheMiss%, BranchMissPerInstr, Time(s), and RSD% for each counter
+- All data saved to `res/res-<timestamp>.txt`
+- File contains: Experiment name, Experiment count (E), start/step/end parameters, and performance counter statistics for each experiment
 
 ---
-
-## Data Analysis and Visualization
-
-### Automatic Plotting
-The `make run` target:
-1. Compiles and runs `./perf_counters 30000 16 2000 3`
-2. Finds latest CSV in `res/`
-3. Runs `python3 plot_perf.py` on it
-4. Saves plot to `plots/plot_sorting_perf_<timestamp>.png`
-
-The `make plot` target:
-1. Runs `python3 plot_perf.py` on the latest CSV
-2. Saves plot to `plots/plot_sorting_perf_<timestamp>.png`
-3. **Opens an interactive matplotlib window** where you can zoom and pan
-
-Plot colors:
-- **Blue**: Insertion Sort
-- **Red**: Bubble Sort  
-- **Green**: Quick Sort
-
-**Note:** The matplotlib window might appear under other open windows. Check your taskbar/dock if you don't see it.
-
-### Manual Plotting
-```bash
-# Plot specific file (opens interactive matplotlib window)
-python3 plot_perf.py res/sorting_perf_*.csv
-
-# Plot latest file (opens interactive matplotlib window)
-python3 plot_perf.py res/sorting_perf_$(ls -t res/*.csv | head -1 | cut -d/ -f3)
-```
-
-When `plot_perf.py` runs, it will:
-1. Save the plot as a PNG file to `plots/`
-2. Display an interactive matplotlib window
-3. Print instructions for zooming and panning
-4. Warn that the window might appear under other windows
-
----
-
-## Best Practices
-
-### Array Size Configuration
-- **Small** (start=16, max=1000, step=100): Quick testing
-- **Moderate** (start=16, max=30000, step=2000): Standard benchmarking (used by `make run`)
-- **Custom**: Adjust based on algorithm complexity and patience
-
-### Experiments (E)
-- **E=1**: Very quick, no statistical data
-- **E=3**: Good balance (recommended, used by `make run`)
-- **E=5-10**: High statistical accuracy
-
-### Warning
-O(n²) algorithms (Bubble Sort, Insertion Sort) become very slow for large array sizes. Use `timeout` for long-running tests:
-```bash
-# Run with small array sizes
-./perf_counters 1000 16 100 1
-
-# Or use timeout
-timeout 30 ./perf_counters 5000 16 500 3
-```
-
----
-
-## Error Handling
-
-### Permission Issues
-```bash
-echo -1 | sudo tee /proc/sys/kernel/perf_event_paranoid
-```
-
-### Directory Setup
-```bash
-mkdir -p res plots
-```
-
----
-
-## Extending to Other Functions
-
-```c
-for (int exp = 0; exp < noExp; exp++) {
-    struct timespec start, end;
-    clock_gettime(CLOCK_MONOTONIC, &start);
-    counters_start();
-    
-    your_function(input);
-    
-    counters_stop();
-    clock_gettime(CLOCK_MONOTONIC, &end);
-    
-    // Store and report results
-}
-```
-
----
-
-## Files
-- `perf_counters_L1data.c`: Main program with performance counter logic and sorting benchmarks
-- `sorting.c`: Sorting algorithm implementations (insertion_sort, bubble_sort, quick_sort)
-- `Makefile`: Build system with run target
-- `plot_perf.py`: Plotting script with algorithm-specific colors
-- `res/`: CSV output directory
-- `plots/`: Plot output directory (PNG files)
-- `measuring.md`: This documentation file
-
----
-
-## Palindrome Performance Testing
-
-### Overview
-The `perf_palindrome` program benchmarks various palindrome checking algorithms using a similar methodology, adapted for string processing workloads.
-
-### Standard Methodology
-- **Fixed string length**: 100,000 characters (from `createPalindrome()`)
-- **1000 iterations per experiment**: Each function is run 1000 times per experiment
-- **N experiments**: User-configurable via command-line argument (default: 1)
-- **Hardware performance counters**: Same 5 counters (Cycles, Instructions, CacheRefs, CacheMisses, BranchMisses)
-
-### Command-Line Usage
-```bash
-# Run with N experiments (default is 1)
-./perf_palindrome 5
-```
-
-### Tested Algorithms
-The following palindrome checking functions are benchmarked:
-- **palinC0a** through **palinC0d**: Basic C implementations
-- **palinC1**: Optimized C implementation
-- **cHK1**, **cHK2**: C implementations by HK
-- **asmHK1**: Assembly implementation by HK
-
-### Output Format
-For each algorithm, the program outputs:
-- N experiment execution times (total time for 1000 runs)
-- Mean execution time and relative standard deviation
-- Performance counter values with mean and relative standard deviation
-- **IPC (Instructions Per Cycle)**: mean and relative standard deviation
-- **Cache Miss Rate**: mean and relative standard deviation (percentage of cache references that miss)
-
-### Key Insight
-**The execution times represent total time for 1000 function calls**, not per-call time. This is the standard for this palindrome test suite and allows for more stable measurements.
-
-### Performance Counter Statistics
-For each of the N experiments, all 5 hardware performance counters are measured.
-- **IPC** is calculated as: `IPC = Instructions / Cycles` for each experiment, then averaged across N experiments.
-- **Cache Miss Rate** is calculated as: `Cache Miss Rate = (CacheMisses / CacheRefs) * 100` for each experiment, then averaged across N experiments.
-
----
-
-## Summary
-This framework enables systematic performance measurement with:
-1. Configurable array sizes (start, max, step) and experiments via command-line
-2. Hardware performance counter readings from ARM Cortex-A72 PMU
-3. Derived metrics (IPC, CacheMiss%, BranchMissPerInstr)
-4. Terminal output with formatted columns (M for millions, k for thousands)
-5. CSV output for data analysis
-6. Automatic plotting via Makefile with algorithm-specific colors
-7. Support for extending to any function
-8. **Palindrome-specific**: 1000 iterations per experiment, total time for 1000 runs reported
