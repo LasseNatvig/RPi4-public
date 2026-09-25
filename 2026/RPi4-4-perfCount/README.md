@@ -23,4 +23,4 @@ The main purpose of the example is to help students read performance counters on
 * main.c
 * File structure with several "modules" such as cache.c/.c, and classical header guards
 * the function parseArgs() in helpers.c
-* 
+  
