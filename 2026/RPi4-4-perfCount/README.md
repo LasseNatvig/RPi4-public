@@ -21,6 +21,10 @@ The main purpose of the example is to help students read performance counters on
 ## Which parts of the example is part of the TDT4258-2026 reading list
 
 * main.c
-* File structure with several "modules" such as cache.c/.c, and classical header guards
+* File structure with several "modules" such as cache.c/.h, and classical header guards
 * the function parseArgs() in helpers.c
+
+## Comments
+
+* If you have comments to the example, please send them in an e-mail to the TDT4258 course teacher.
   
