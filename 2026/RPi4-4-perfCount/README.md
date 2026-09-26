@@ -2,11 +2,11 @@
 
 This code has been developed on an RPi4 with vsCode & Cline running Mistral Medium on Idun@NTNU. The code from Mistral Medium has been reviewed, discussed, tested, changed and commented. It can still contain errors or weak parts. Please send comments to your teacher in e-mail if you have ideas for improvements. Last updated 2026-09-25, Lasse Natvig.
 
-The main purpose of the example is to help students read performance counters on the Raspberry Pi, to demonstrate how we typically organize C-code into several modules, and one of many possible ways to run experiments, store its results and vizualize them. The python plotting scripts are made by "vibe coding" and has only been given simplified review by visual inspection of the plots.
+The main purpose of the example is to help students read performance counters on the Raspberry Pi, to demonstrate how we typically organize C-code into several modules, and one of many possible ways to run experiments, store its results and vizualize them. The python plotting scripts are made by "vibe coding" and has only been given simplified review by visual inspection of the plots. In addition to this README file, the measuring methodology is also summarized in the file **measuring.md** in this folder.
 
 ## What
 
-* **main.c** demonstrates the use of performance counters for measuring detailed execution statistics for various smaller functions. It was **introduced in Lecture 5** and used to demonstrate the effect of cold start, disturbance from other programs, and strided access to arrays.
+* **main.c** demonstrates the use of performance counters for measuring detailed execution statistics for various smaller functions. It was **introduced in Lecture 5 and 7** and used to demonstrate the effect of cold start, disturbance from other programs, and strided access to arrays.
 * You would normally have one project and main program for each experiment, but in this case we wanted to illustrate several different smaller example experiments in one TDT4258-RPi4-example.
 * The main program allocates storage for the performance counters, and reports the results both in the terminal (console) and to a timestamped file that is stores in subfolder res.
 * The main program takes these arguments from the command line:
