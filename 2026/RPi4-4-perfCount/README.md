@@ -18,7 +18,7 @@ The main purpose of the example is to help students read performance counters on
 
 * The makefile contains various examples of use, such as "make sort", "make prime" etc. The plotting scripts will look in the res-folder after the latest .txt file report results with experiment name prime, cache or sort.
 
-## Which parts of the example is part of the TDT4258-2026 reading list
+## Which parts of the example are part of the TDT4258-2026 reading list
 
 * main.c
 * File structure with several "modules" such as cache.c/.h, and classical header guards
