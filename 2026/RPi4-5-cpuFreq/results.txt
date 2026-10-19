@@ -1,0 +1,249 @@
+RPi4-5 Demo Program
+Started: 2026-10-19 17:52:42
+
+
+****** Part 1 ******
+Tries to set frequency 600000 with ondemand
+Using governor: ondemand
+Starts with CPU frequency: 1700000
+Result: 100000000 
+Execution time: 513.266 ms
+Finished-at-CPU-frequency: 1800000
+Tries to set frequency 600000 with userspace
+Using governor: userspace
+Starts with CPU frequency: 600000
+Result: 100000000 
+Execution time: 1519.147 ms
+Finished-at-CPU-frequency: 600000
+
+****** Part 2 ******
+Using governor: userspace
+Starts with CPU frequency: 600000
+Result: 100000000 
+Execution time: 1529.557 ms
+Finished-at-CPU-frequency: 600000
+Using governor: userspace
+Starts with CPU frequency: 700000
+Result: 100000000 
+Execution time: 1301.519 ms
+Finished-at-CPU-frequency: 700000
+Using governor: userspace
+Starts with CPU frequency: 800000
+Result: 100000000 
+Execution time: 1135.347 ms
+Finished-at-CPU-frequency: 800000
+Using governor: userspace
+Starts with CPU frequency: 900000
+Result: 100000000 
+Execution time: 1008.410 ms
+Finished-at-CPU-frequency: 900000
+Using governor: userspace
+Starts with CPU frequency: 1000000
+Result: 100000000 
+Execution time: 914.853 ms
+Finished-at-CPU-frequency: 1000000
+Using governor: userspace
+Starts with CPU frequency: 1100000
+Result: 100000000 
+Execution time: 825.946 ms
+Finished-at-CPU-frequency: 1100000
+Using governor: userspace
+Starts with CPU frequency: 1200000
+Result: 100000000 
+Execution time: 756.111 ms
+Finished-at-CPU-frequency: 1200000
+Using governor: userspace
+Starts with CPU frequency: 1300000
+Result: 100000000 
+Execution time: 696.899 ms
+Finished-at-CPU-frequency: 1300000
+Using governor: userspace
+Starts with CPU frequency: 1400000
+Result: 100000000 
+Execution time: 646.667 ms
+Finished-at-CPU-frequency: 1400000
+Using governor: userspace
+Starts with CPU frequency: 1500000
+Result: 100000000 
+Execution time: 603.521 ms
+Finished-at-CPU-frequency: 1500000
+Using governor: userspace
+Starts with CPU frequency: 1600000
+Result: 100000000 
+Execution time: 565.747 ms
+Finished-at-CPU-frequency: 1600000
+Using governor: userspace
+Starts with CPU frequency: 1700000
+Result: 100000000 
+Execution time: 532.829 ms
+Finished-at-CPU-frequency: 1700000
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 100000000 
+Execution time: 507.272 ms
+Finished-at-CPU-frequency: 1800000
+
+****** Part 3 ******
+Using governor: conservative
+Starts with CPU frequency: 1800000
+Result: 100000000 
+Execution time: 504.217 ms
+Finished-at-CPU-frequency: 1800000
+Using governor: ondemand
+Starts with CPU frequency: 1600000
+Result: 100000000 
+Execution time: 508.434 ms
+Finished-at-CPU-frequency: 1800000
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 100000000 
+Execution time: 506.592 ms
+Finished-at-CPU-frequency: 1800000
+Using governor: powersave
+Starts with CPU frequency: 600000
+Result: 100000000 
+Execution time: 1521.299 ms
+Finished-at-CPU-frequency: 600000
+Using governor: performance
+Starts with CPU frequency: 1800000
+Result: 100000000 
+Execution time: 504.245 ms
+Finished-at-CPU-frequency: 1800000
+Using governor: schedutil
+Starts with CPU frequency: 1400000
+Result: 100000000 
+Execution time: 518.706 ms
+Finished-at-CPU-frequency: 1800000
+
+****** Part 4 ******
+Bound to core 1
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15134.699 ms
+Finished-at-CPU-frequency: 1800000
+Bound to core 2
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15079.382 ms
+Finished-at-CPU-frequency: 1800000
+Bound to core 3
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15082.030 ms
+Finished-at-CPU-frequency: 1800000
+Bound to core 4
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15075.809 ms
+Finished-at-CPU-frequency: 1800000
+Cores 0 and 1 in parallel
+Core 1:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15074.330 ms
+Finished-at-CPU-frequency: 1800000
+Core 2:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15078.893 ms
+Finished-at-CPU-frequency: 1800000
+Cores 0, 1, 2 and 3 in parallel
+Core 0:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15132.423 ms
+Finished-at-CPU-frequency: 1800000
+Core 1:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15089.151 ms
+Finished-at-CPU-frequency: 1800000
+Core 2:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15084.682 ms
+Finished-at-CPU-frequency: 1800000
+Core 3:
+Using governor: userspace
+Starts with CPU frequency: 1800000
+Result: 3000000000 
+Execution time: 15115.224 ms
+Finished-at-CPU-frequency: 1800000
+
+****** Part 5 ******
+Frequency (kHz): 600000
+Threads: 1, Pi = 3.141592653590, Execution time: 20795.8 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 10379.1 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 7434.3 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 6246.0 ms
+Frequency (kHz): 700000
+Threads: 1, Pi = 3.141592653590, Execution time: 17729.3 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 8872.5 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 6169.9 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 5482.5 ms
+Frequency (kHz): 800000
+Threads: 1, Pi = 3.141592653590, Execution time: 15498.3 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 7792.2 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 5468.1 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 4735.0 ms
+Frequency (kHz): 900000
+Threads: 1, Pi = 3.141592653590, Execution time: 13766.9 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 6938.9 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 4802.7 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 4106.2 ms
+Frequency (kHz): 1000000
+Threads: 1, Pi = 3.141592653590, Execution time: 12364.5 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 6339.8 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 4942.3 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 3860.7 ms
+Frequency (kHz): 1100000
+Threads: 1, Pi = 3.141592653590, Execution time: 11249.6 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 5643.0 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 3959.4 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 3260.3 ms
+Frequency (kHz): 1200000
+Threads: 1, Pi = 3.141592653590, Execution time: 10301.3 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 5154.8 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 3602.5 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2969.2 ms
+Frequency (kHz): 1300000
+Threads: 1, Pi = 3.141592653590, Execution time: 9539.9 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 4748.8 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 3219.0 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2810.6 ms
+Frequency (kHz): 1400000
+Threads: 1, Pi = 3.141592653590, Execution time: 8805.5 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 4409.1 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 3025.7 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2462.7 ms
+Frequency (kHz): 1500000
+Threads: 1, Pi = 3.141592653590, Execution time: 8216.4 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 4170.7 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 2818.6 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2304.4 ms
+Frequency (kHz): 1600000
+Threads: 1, Pi = 3.141592653590, Execution time: 7715.4 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 3851.9 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 2612.6 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2360.6 ms
+Frequency (kHz): 1700000
+Threads: 1, Pi = 3.141592653590, Execution time: 7265.0 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 3717.2 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 2481.4 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 2085.9 ms
+Frequency (kHz): 1800000
+Threads: 1, Pi = 3.141592653590, Execution time: 6835.2 ms
+Threads: 2, Pi = 3.141592653590, Execution time: 3447.2 ms
+Threads: 3, Pi = 3.141592653590, Execution time: 2376.0 ms
+Threads: 4, Pi = 3.141592653590, Execution time: 1984.7 ms
+
+Finished: 2026-10-19 17:59:57
