@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "NOGDI",
+                "_WINDOWS",
+                "WIN32",
+                "_CRT_SECURE_NO_WARNINGS"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "msvc-x64",
+            "compilerArgs": [
+                "-m64"
+            ],
+            "windowsSdkVersion": "10.0.18362.0"
+        }
+    ],
+    "version": 4
+}

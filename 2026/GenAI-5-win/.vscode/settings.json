@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "tgmath.h": "c",
+        "string.h": "c"
+    }
+}

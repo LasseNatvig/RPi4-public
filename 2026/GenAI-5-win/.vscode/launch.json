@@ -1,0 +1,61 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Build-Debug Integrated Terminal",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build Debug Executable",
+            "logging": {"moduleLoad": false},
+            "visualizerFile": "${env:VCINSTALLDIR}/../Common7/Packages/Debugger/Visualizers/stl.natvis"
+        },
+        {
+            "name": "Build-Debug External Terminal",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "preLaunchTask": "Build Debug Executable",
+            "logging": {"moduleLoad": false},
+            "visualizerFile": "${env:VCINSTALLDIR}/../Common7/Packages/Debugger/Visualizers/stl.natvis"
+        },
+        {
+            "name": "Build-RunRelease-Integrated Terminal",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/release.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build Release Executable",
+            "logging": {"moduleLoad": false}
+
+        },
+        {
+            "name": "Build-RunRelease-External Terminal",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/release.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "console": "externalTerminal",
+            "preLaunchTask": "Build Release Executable",
+            "logging": {"moduleLoad": false}
+
+        }
+    ]
+}
