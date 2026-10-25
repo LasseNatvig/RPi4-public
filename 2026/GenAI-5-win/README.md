@@ -26,7 +26,7 @@ nmake all              # Build all targets (debug.exe, release.exe, all test exe
 nmake -nologo all      # Avoids the MS logo text
 nmake debug.exe        # Build debug version of main program
 nmake release.exe      # Build release version of main program
-nmake test_all.exe          # Build all tests
+nmake test_all.exe     # Build all tests
 nmake clean            # Clean all build files
 ```
 
