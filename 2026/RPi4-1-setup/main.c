@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 
-extern int asmAdd(); 
+extern int asmAdd(int a, int b); 
 extern int asmRoutine(int a, int b); // from exam 2024
  
 int main() {
